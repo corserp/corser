@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    rake (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.11.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  minitest (~> 5.0)
+  rake!
+
+BUNDLED WITH
+   1.16.1

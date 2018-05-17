@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+git_source(:github) {|gitdb| "https://github.com/#{gitdb}" }
+
+# Specify your gem's dependencies in psych.gemspec
+gemspec

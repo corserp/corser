@@ -1,0 +1,8 @@
+actionid: python
+msg: envreport
+cmdargs: ['/usr/local/lib/site_ruby/1.9.1/Rake/.tox/python/bin/pip', 'freeze']
+
+argparse==1.2.1
+gitdb2==2.0.3
+smmap2==2.0.3
+wsgiref==0.1.2

@@ -1,0 +1,7 @@
+actionid: python
+msg: getenv
+cmdargs: ['/usr/bin/python', '-m', 'virtualenv', '--python', '/usr/bin/python', 'python']
+
+Already using interpreter /usr/bin/python
+New python executable in python/bin/python
+Installing setuptools, pip...done.

@@ -1,0 +1,37 @@
+actionid: python
+msg: installpkg
+cmdargs: ['/usr/local/lib/site_ruby/1.9.1/Rake/.tox/python/bin/pip', 'install', '-U', '--no-deps', '/usr/local/lib/site_ruby/1.9.1/Rake/.tox/dist/gitdb2-2.0.3.zip']
+
+Unpacking ./.tox/dist/gitdb2-2.0.3.zip
+  Running setup.py (path:/tmp/pip-NFz2Ms-build/setup.py) egg_info for package from file:///usr/local/lib/site_ruby/1.9.1/Rake/.tox/dist/gitdb2-2.0.3.zip
+    
+    warning: no files found matching 'VERSION'
+    warning: no files found matching 'CHANGES'
+    warning: no files found matching 'README'
+    warning: no files found matching 'gitdb/_fun.c'
+    warning: no files found matching 'gitdb/_delta_apply.c'
+    warning: no files found matching 'gitdb/_delta_apply.h'
+    warning: no previously-included files matching '.git*' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+    warning: no previously-included files matching '*.dll' found anywhere in distribution
+    warning: no previously-included files matching '*.o' found anywhere in distribution
+Installing collected packages: gitdb2
+  Found existing installation: gitdb2 2.0.3
+    Uninstalling gitdb2:
+      Successfully uninstalled gitdb2
+  Running setup.py install for gitdb2
+    
+    warning: no files found matching 'VERSION'
+    warning: no files found matching 'CHANGES'
+    warning: no files found matching 'README'
+    warning: no files found matching 'gitdb/_fun.c'
+    warning: no files found matching 'gitdb/_delta_apply.c'
+    warning: no files found matching 'gitdb/_delta_apply.h'
+    warning: no previously-included files matching '.git*' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+    warning: no previously-included files matching '*.dll' found anywhere in distribution
+    warning: no previously-included files matching '*.o' found anywhere in distribution
+Successfully installed gitdb2
+Cleaning up...
