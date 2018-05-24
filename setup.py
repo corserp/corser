@@ -7,7 +7,11 @@ from setuptools import setup
 __author__ = "Sebastian Thiel"
 __contact__ = "byronimo@gmail.com"
 __homepage__ = "https://github.com/gitpython-developers/gitdb"
+<<<<<<< .merge_file_ek0Mnj
 version_info = (2, 0, 3)
+=======
+version_info = (2, 0, 2)
+>>>>>>> .merge_file_jqxLbk
 __version__ = '.'.join(str(i) for i in version_info)
 
 setup(
@@ -41,5 +45,6 @@ setup(
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
     ]
 )
