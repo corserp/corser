@@ -7,11 +7,15 @@ from setuptools import setup
 __author__ = "Sebastian Thiel"
 __contact__ = "byronimo@gmail.com"
 __homepage__ = "https://github.com/gitpython-developers/gitdb"
+<<<<<<< .merge_file_1Q4gPL
 <<<<<<< .merge_file_ek0Mnj
 version_info = (2, 0, 3)
 =======
 version_info = (2, 0, 2)
 >>>>>>> .merge_file_jqxLbk
+=======
+version_info = (2, 0, 2)
+>>>>>>> .merge_file_0WPdQM
 __version__ = '.'.join(str(i) for i in version_info)
 
 setup(

@@ -3,6 +3,7 @@ SETUP = $(PYTHON) setup.py
 TESTRUNNER = $(shell which nosetests)
 TESTFLAGS =
 
+<<<<<<< .merge_file_LT6PYC
 <<<<<<< .merge_file_u633C7
 all::
 	@grep -Ee '^[a-z].*:' Makefile | cut -d: -f1 | grep -vF all
@@ -24,6 +25,11 @@ all:
 	@grep -Ee '^[a-z].*:' Makefile | cut -d: -f1 | grep -vF all
 >>>>>>> .merge_file_7jlZDa
 
+=======
+all:
+	@grep -Ee '^[a-z].*:' Makefile | cut -d: -f1 | grep -vF all
+
+>>>>>>> .merge_file_QZZRMC
 doc: 
 	make -C doc/ html
 
