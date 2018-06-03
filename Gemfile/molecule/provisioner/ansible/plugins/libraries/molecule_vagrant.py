@@ -24,7 +24,6 @@
 import contextlib
 import datetime
 import os
-import subprocess
 import sys
 
 import molecule

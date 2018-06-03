@@ -1,6 +1,0 @@
-source "https://rubygems.org"
-
-git_source(:github) {|corser| "https://github.com/#{corserp}" }
-
-# Specify your gem's dependencies in rake.gemspec
-gemspec

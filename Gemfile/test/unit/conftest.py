@@ -270,8 +270,6 @@ def patched_testinfra(mocker):
 
 @pytest.fixture
 def patched_scenario_setup(mocker):
-    mocker.patch('molecule.config.Config.env')
-
     return mocker.patch('molecule.scenario.Scenario._setup')
 
 

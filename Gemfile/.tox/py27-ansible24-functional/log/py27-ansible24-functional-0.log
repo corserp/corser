@@ -1,8 +1,0 @@
-actionid: py27-ansible24-functional
-msg: getenv
-cmdargs: ['/usr/bin/python', '-m', 'virtualenv', '--python', '/usr/bin/python2.7', 'py27-ansible24-functional']
-
-New python executable in py27-ansible24-functional/bin/python2.7
-Also creating executable in py27-ansible24-functional/bin/python
-Installing setuptools, pip...done.
-Running virtualenv with interpreter /usr/bin/python2.7

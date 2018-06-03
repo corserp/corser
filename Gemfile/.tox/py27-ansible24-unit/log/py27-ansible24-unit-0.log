@@ -1,8 +1,0 @@
-actionid: py27-ansible24-unit
-msg: getenv
-cmdargs: ['/usr/bin/python', '-m', 'virtualenv', '--python', '/usr/bin/python2.7', 'py27-ansible24-unit']
-
-New python executable in py27-ansible24-unit/bin/python2.7
-Also creating executable in py27-ansible24-unit/bin/python
-Installing setuptools, pip...done.
-Running virtualenv with interpreter /usr/bin/python2.7

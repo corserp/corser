@@ -406,29 +406,25 @@ def test_get_driver_name_raises_when_different_driver_used(
     patched_logger_critical.assert_called_once_with(msg)
 
 
-def test_get_config(config_instance):
-    assert isinstance(config_instance._get_config(), dict)
+def test_combine(config_instance):
+    assert isinstance(config_instance._combine(), dict)
 
 
-def test_get_config_with_base_config(config_instance):
+def test_combine_with_base_config(config_instance):
     config_instance.args = {'base_config': './foo.yml'}
     contents = {'foo': 'bar'}
     util.write_file(config_instance.args['base_config'],
                     util.safe_dump(contents))
-    result = config_instance._get_config()
+    result = config_instance._combine()
 
     assert result['foo'] == 'bar'
-
-
-def test_reget_config(config_instance):
-    assert isinstance(config_instance._reget_config(), dict)
 
 
 def test_interpolate(patched_logger_critical, config_instance):
     string = 'foo: $HOME'
     x = 'foo: {}'.format(os.environ['HOME'])
 
-    assert x == config_instance._interpolate(string, os.environ, None)
+    assert x == config_instance._interpolate(string)
 
 
 def test_interpolate_raises_on_failed_interpolation(patched_logger_critical,
@@ -436,7 +432,7 @@ def test_interpolate_raises_on_failed_interpolation(patched_logger_critical,
     string = '$6$8I5Cfmpr$kGZB'
 
     with pytest.raises(SystemExit) as e:
-        config_instance._interpolate(string, os.environ, None)
+        config_instance._interpolate(string)
 
     assert 1 == e.value.code
 
@@ -457,6 +453,8 @@ def test_validate(mocker, config_instance, patched_logger_info,
     patched_logger_info.assert_called_once_with(msg)
 
     m.assert_called_once_with(config_instance.config)
+    assert 'ansible-galaxy' == config_instance.config['dependency']['command']
+    assert 'docker' == config_instance.config['driver']['name']
 
     msg = 'Validation completed successfully.'
     patched_logger_success.assert_called_once_with(msg)
