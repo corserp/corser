@@ -7,7 +7,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/usr/local/lib/site_ruby/1.9.1/Rake/.venv"
+=======
+setenv VIRTUAL_ENV "/usr/local/lib/site_ruby/1.9.1/Rake/version/.venv"
+>>>>>>> d57f6a88ea1e2ce764e2bf3bcfccc391a5aa98b9
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

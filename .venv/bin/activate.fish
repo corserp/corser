@@ -32,7 +32,11 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/usr/local/lib/site_ruby/1.9.1/Rake/.venv"
+=======
+set -gx VIRTUAL_ENV "/usr/local/lib/site_ruby/1.9.1/Rake/version/.venv"
+>>>>>>> d57f6a88ea1e2ce764e2bf3bcfccc391a5aa98b9
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
