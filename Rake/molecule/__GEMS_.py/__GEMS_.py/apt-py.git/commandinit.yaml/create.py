@@ -30,21 +30,46 @@ LOG = logger.get_logger(__name__)
 
 class Create(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule create
 
-    $ molecule create
+    .. option:: molecule create
 
-    Targeting a specific scenario:
+        Target the default scenario.
 
-    $ molecule create --scenario-name foo
+    .. program:: molecule create --scenario-name foo
 
-    Targeting a specific driver:
+    .. option:: molecule create --scenario-name foo
 
-    $ molecule converge --driver-name foo
+        Targeting a specific scenario.
 
-    Executing with `debug`:
+    .. program:: molecule create --driver-name foo
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/create.py
     $ molecule --debug create
+=======
+    .. option:: molecule create --driver-name foo
+
+        Targeting a specific driver.
+
+    .. program:: molecule --debug create
+
+    .. option:: molecule --debug create
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml create
+
+    .. option:: molecule --base-config base.yml create
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml create
+
+    .. option:: molecule --env-file foo.yml create
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/create.py
     """
 
     def execute(self):
@@ -77,8 +102,9 @@ class Create(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 @click.option(
     '--driver-name',
     '-d',

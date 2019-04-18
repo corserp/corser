@@ -9,6 +9,22 @@
     molecule_ephemeral_directory: "{{ lookup('env', 'MOLECULE_EPHEMERAL_DIRECTORY') }}"
     molecule_yml: "{{ lookup('file', molecule_file) | molecule_from_yaml }}"
   tasks:
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/test/resources/playbooks/docker/create.yml
+=======
+    - name: Log into a Docker registry
+      docker_login:
+        username: "{{ item.registry.credentials.username }}"
+        password: "{{ item.registry.credentials.password }}"
+        email: "{{ item.registry.credentials.email | default(omit) }}"
+        registry: "{{ item.registry.url }}"
+        docker_host: "{{ item.docker_host | default('unix://var/run/docker.sock') }}"
+      with_items: "{{ molecule_yml.platforms }}"
+      when:
+        - item.registry is defined
+        - item.registry.credentials is defined
+        - item.registry.credentials.username is defined
+
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/resources/playbooks/docker/create.yml
     - name: Create Dockerfiles from image names
       template:
         src: Dockerfile.j2
@@ -19,6 +35,7 @@
     - name: Discover local Docker images
       docker_image_facts:
         name: "molecule_local/{{ item.item.name }}"
+        docker_host: "{{ item.item.docker_host | default('unix://var/run/docker.sock') }}"
       with_items: "{{ platforms.results }}"
       register: docker_images
 
@@ -26,6 +43,7 @@
       docker_image:
         path: "{{ molecule_ephemeral_directory }}"
         name: "molecule_local/{{ item.item.image }}"
+        docker_host: "{{ item.item.docker_host | default('unix://var/run/docker.sock') }}"
         dockerfile: "{{ item.item.dockerfile | default(item.invocation.module_args.dest) }}"
         force: "{{ item.item.force | default(true) }}"
       with_items: "{{ platforms.results }}"
@@ -34,12 +52,14 @@
     - name: Create docker network(s)
       docker_network:
         name: "{{ item }}"
+        docker_host: "{{ item.docker_host | default('unix://var/run/docker.sock') }}"
         state: present
       with_items: "{{ molecule_yml.platforms | molecule_get_docker_networks }}"
 
     - name: Create molecule instance(s)
       docker_container:
         name: "{{ item.name }}"
+        docker_host: "{{ item.docker_host | default('unix://var/run/docker.sock') }}"
         hostname: "{{ item.name }}"
         image: "molecule_local/{{ item.image }}"
         state: started
@@ -47,7 +67,9 @@
         log_driver: json-file
         command: "{{ item.command | default('bash -c \"while true; do sleep 10000; done\"') }}"
         privileged: "{{ item.privileged | default(omit) }}"
+        security_opts: "{{ item.security_opts | default(omit) }}"
         volumes: "{{ item.volumes | default(omit) }}"
+        tmpfs: "{{ item.tmpfs | default(omit) }}"
         capabilities: "{{ item.capabilities | default(omit) }}"
         exposed_ports: "{{ item.exposed_ports | default(omit) }}"
         published_ports: "{{ item.published_ports | default(omit) }}"

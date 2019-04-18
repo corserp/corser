@@ -29,17 +29,40 @@ LOG = logger.get_logger(__name__)
 
 class Verify(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule verify
 
-    $ molecule verify
+    .. option:: molecule verify
 
-    Targeting a specific scenario:
+        Target the default scenario.
 
-    $ molecule verify --scenario-name foo
+    .. program:: molecule verify --scenario-name foo
 
-    Executing with `debug`:
+    .. option:: molecule verify --scenario-name foo
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/verify.py
     $ molecule --debug verify
+=======
+        Targeting a specific scenario.
+
+    .. program:: molecule --debug verify
+
+    .. option:: molecule --debug verify
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml verify
+
+    .. option:: molecule --base-config base.yml verify
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml verify
+
+    .. option:: molecule --env-file foo.yml verify
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/verify.py
     """
 
     def execute(self):
@@ -58,8 +81,9 @@ class Verify(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 def verify(ctx, scenario_name):  # pragma: no cover
     """ Run automated tests against instances. """
     args = ctx.obj.get('args')

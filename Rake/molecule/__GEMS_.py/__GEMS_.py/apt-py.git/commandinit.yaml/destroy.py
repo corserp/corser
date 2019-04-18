@@ -30,25 +30,52 @@ LOG = logger.get_logger(__name__)
 
 class Destroy(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule destroy
 
-    $ molecule destroy
+    .. option:: molecule destroy
 
-    Target all scenarios:
+        Target the default scenario.
 
-    $ molecule destroy --all
+    .. program:: molecule destroy --scenario-name foo
 
-    Targeting a specific scenario:
+    .. option:: molecule destroy --scenario-name foo
 
-    $ molecule destroy --scenario-name foo
+        Targeting a specific scenario.
 
-    Targeting a specific driver:
+    .. program:: molecule destroy --all
 
-    $ molecule converge --driver-name foo
+    .. option:: molecule destroy --all
 
-    Executing with `debug`:
+        Target all scenarios.
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/destroy.py
     $ molecule --debug destroy
+=======
+    .. program:: molecule destroy --driver-name foo
+
+    .. option:: molecule destroy --driver-name foo
+
+        Targeting a specific driver.
+
+    .. program:: molecule --debug destroy
+
+    .. option:: molecule --debug destroy
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml destroy
+
+    .. option:: molecule --base-config base.yml destroy
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml destroy
+
+    .. option:: molecule --env-file foo.yml destroy
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/destroy.py
     """
 
     def execute(self):
@@ -80,8 +107,9 @@ class Destroy(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 @click.option(
     '--driver-name',
     '-d',

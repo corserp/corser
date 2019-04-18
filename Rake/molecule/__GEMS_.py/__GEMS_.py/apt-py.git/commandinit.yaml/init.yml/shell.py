@@ -33,6 +33,12 @@ from molecule import util
 
 click_completion.init()
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
+=======
+LOCAL_CONFIG = os.path.expanduser('~/.config/molecule/config.yml')
+ENV_FILE = '.env.yml'
+
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/shell.py
 
 def _get_python_version():  # pragma: no cover
     return sys.version_info[:2]
@@ -76,9 +82,28 @@ def _allowed(ctx, param, value):  # pragma: no cover
     default=False,
     callback=_allowed,
     help='Enable or disable debug mode. Default is disabled.')
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
 @click.version_option(version=molecule.__version__)
 @click.pass_context
 def main(ctx, debug):  # pragma: no cover
+=======
+@click.option(
+    '--base-config',
+    '-c',
+    default=LOCAL_CONFIG,
+    help=('Path to a base config.  If provided Molecule will load '
+          "this config first, and deep merge each scenario's "
+          'molecule.yml on top. ({})').format(LOCAL_CONFIG))
+@click.option(
+    '--env-file',
+    '-e',
+    default=ENV_FILE,
+    help=('The file to read variables from when rendering molecule.yml. '
+          '(.env.yml)'))
+@click.version_option(version=molecule.__version__)
+@click.pass_context
+def main(ctx, debug, base_config, env_file):  # pragma: no cover
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/shell.py
     """
     \b
      _____     _             _
@@ -95,6 +120,11 @@ def main(ctx, debug):  # pragma: no cover
     ctx.obj = {}
     ctx.obj['args'] = {}
     ctx.obj['args']['debug'] = debug
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
+=======
+    ctx.obj['args']['base_config'] = base_config
+    ctx.obj['args']['env_file'] = env_file
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/shell.py
 
 
 main.add_command(command.check.check)

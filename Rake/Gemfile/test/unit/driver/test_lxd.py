@@ -23,7 +23,36 @@ import os
 import pytest
 
 from molecule import config
+<<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
 from molecule.driver import lxd
+=======
+from molecule.driver import delegated
+
+
+@pytest.fixture
+def _driver_managed_section_data():
+    return {
+        'driver': {
+            'name': 'delegated',
+        }
+    }
+
+
+@pytest.fixture
+def _driver_unmanaged_section_data():
+    return {
+        'driver': {
+            'name': 'delegated',
+            'options': {
+                'login_cmd_template': 'docker exec -ti {instance} bash',
+                'ansible_connection_options': {
+                    'ansible_connection': 'docker'
+                },
+                'managed': False,
+            }
+        }
+    }
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
 
 
 @pytest.fixture
@@ -46,14 +75,55 @@ def test_name_property(_instance):
     assert 'lxd' == _instance.name
 
 
+<<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
 def test_options_property(_instance):
     x = {'managed': True}
+=======
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
+def test_options_property(_instance):
+    x = {
+        'ansible_connection_options': {
+            'ansible_connection': 'docker'
+        },
+        'login_cmd_template': 'docker exec -ti {instance} bash',
+        'managed': False,
+    }
 
     assert x == _instance.options
 
 
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_managed_section_data'], indirect=True)
+def test_options_property_when_managed(_instance):
+    x = {
+        'managed': True,
+    }
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
+
+    assert x == _instance.options
+
+
+<<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
+=======
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
 def test_login_cmd_template_property(_instance):
     assert 'lxc exec {instance} bash' == _instance.login_cmd_template
+
+
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_managed_section_data'], indirect=True)
+def test_login_cmd_template_property_when_managed(_instance):
+    x = ('ssh {address} -l {user} -p {port} -i {identity_file} '
+         '-o UserKnownHostsFile=/dev/null '
+         '-o ControlMaster=auto '
+         '-o ControlPersist=60s '
+         '-o IdentitiesOnly=yes '
+         '-o StrictHostKeyChecking=no')
+
+    assert x == _instance.login_cmd_template
 
 
 def test_safe_files_property(_instance):
@@ -72,18 +142,113 @@ def test_managed_property(_instance):
     assert _instance.managed
 
 
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
 def test_default_ssh_connection_options_property(_instance):
     assert [] == _instance.default_ssh_connection_options
 
 
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_managed_section_data'], indirect=True)
+def test_default_ssh_connection_options_property_when_managed(_instance):
+    x = [
+        '-o UserKnownHostsFile=/dev/null',
+        '-o ControlMaster=auto',
+        '-o ControlPersist=60s',
+        '-o IdentitiesOnly=yes',
+        '-o StrictHostKeyChecking=no',
+    ]
+
+    assert x == _instance.default_ssh_connection_options
+
+
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
 def test_login_options(_instance):
     assert {'instance': 'foo'} == _instance.login_options('foo')
 
 
+<<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
+=======
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_managed_section_data'], indirect=True)
+def test_login_options_when_managed(mocker, _instance):
+    m = mocker.patch(
+        'molecule.driver.delegated.Delegated._get_instance_config')
+    m.return_value = {
+        'instance': 'foo',
+        'address': '172.16.0.2',
+        'user': 'cloud-user',
+        'port': 22,
+        'identity_file': '/foo/bar',
+    }
+
+    x = {
+        'instance': 'foo',
+        'address': '172.16.0.2',
+        'user': 'cloud-user',
+        'port': 22,
+        'identity_file': '/foo/bar',
+    }
+    assert x == _instance.login_options('foo')
+
+
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
 def test_ansible_connection_options(_instance):
     x = {'ansible_connection': 'lxd'}
 
     assert x == _instance.ansible_connection_options('foo')
+
+
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_managed_section_data'], indirect=True)
+def test_ansible_connection_options_when_managed(mocker, _instance):
+    m = mocker.patch(
+        'molecule.driver.delegated.Delegated._get_instance_config')
+    m.return_value = {
+        'instance': 'foo',
+        'address': '172.16.0.2',
+        'user': 'cloud-user',
+        'port': 22,
+        'identity_file': '/foo/bar',
+    }
+
+    x = {
+        'ansible_host':
+        '172.16.0.2',
+        'ansible_port':
+        22,
+        'ansible_user':
+        'cloud-user',
+        'ansible_private_key_file':
+        '/foo/bar',
+        'connection':
+        'ssh',
+        'ansible_ssh_common_args': ('-o UserKnownHostsFile=/dev/null '
+                                    '-o ControlMaster=auto '
+                                    '-o ControlPersist=60s '
+                                    '-o IdentitiesOnly=yes '
+                                    '-o StrictHostKeyChecking=no'),
+    }
+    assert x == _instance.ansible_connection_options('foo')
+
+
+def test_ansible_connection_options_handles_missing_instance_config_managed(
+        mocker, _instance):
+    m = mocker.patch('molecule.util.safe_load_file')
+    m.side_effect = IOError
+
+    assert {} == _instance.ansible_connection_options('foo')
+
+
+def test_ansible_connection_options_handles_missing_results_key_when_managed(
+        mocker, _instance):
+    m = mocker.patch('molecule.util.safe_load_file')
+    m.side_effect = StopIteration
+
+    assert {} == _instance.ansible_connection_options('foo')
 
 
 def test_instance_config_property(_instance):
@@ -93,6 +258,8 @@ def test_instance_config_property(_instance):
     assert x == _instance.instance_config
 
 
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
 def test_ssh_connection_options_property(_instance):
     assert [] == _instance.ssh_connection_options
 
@@ -123,3 +290,17 @@ def test_created(_instance):
 
 def test_converged(_instance):
     assert 'false' == _instance._converged()
+
+
+def test_get_instance_config(mocker, _instance):
+    m = mocker.patch('molecule.util.safe_load_file')
+    m.return_value = [{
+        'instance': 'foo',
+    }, {
+        'instance': 'bar',
+    }]
+
+    x = {
+        'instance': 'foo',
+    }
+    assert x == _instance._get_instance_config('foo')

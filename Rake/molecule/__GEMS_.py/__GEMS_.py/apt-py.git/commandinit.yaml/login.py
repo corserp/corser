@@ -38,21 +38,52 @@ LOG = logger.get_logger(__name__)
 
 class Login(base.Base):
     """
-    Targeting the only running host:
+    .. program:: molecule login
 
-    $ molecule login
+    .. option:: molecule login
 
-    Targeting a specific running host:
+        Target the default scenario.
 
-    $ molecule login --host hostname
+    .. program:: molecule login --scenario-name foo
 
-    Targeting a specific running host and scenario:
+    .. option:: molecule login --scenario-name foo
 
-    $ molecule login --host hostname --scenario-name foo
+        Targeting a specific scenario.
 
-    Executing with `debug`:
+    .. program:: molecule login --host hostname
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/login.py
     $ molecule --debug login
+=======
+    .. option:: molecule login --host hostname
+
+        Targeting a specific running host.
+
+    .. program:: molecule login --host hostname --scenario-name foo
+
+    .. option:: molecule login --host hostname --scenario-name foo
+
+        Targeting a specific running host and scenario.
+
+    .. program:: molecule --debug login
+
+    .. option:: molecule --debug login
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml login
+
+    .. option:: molecule --base-config base.yml login
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml login
+
+    .. option:: molecule --env-file foo.yml login
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/login.py
     """
 
     def __init__(self, c):
@@ -67,8 +98,12 @@ class Login(base.Base):
         :return: None
         """
         c = self._config
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/login.py
         if not c.state.created and (c.driver.delegated
                                     and not c.driver.managed):
+=======
+        if ((not c.state.created) and c.driver.managed):
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/login.py
             msg = 'Instances not created.  Please create instances first.'
             util.sysexit_with_message(msg)
 
@@ -136,8 +171,9 @@ class Login(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 def login(ctx, host, scenario_name):  # pragma: no cover
     """ Log in to one instance. """
     args = ctx.obj.get('args')

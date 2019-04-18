@@ -134,3 +134,21 @@ def test_dependency_shell_has_errors(_config):
     x = {'dependency': [{'command': ['null value not allowed']}]}
 
     assert x == schema_v2.validate(_config)
+
+
+@pytest.fixture
+def _model_dependency_shell_errors_section_data():
+    return {
+        'dependency': {
+            'name': 'shell',
+            'command': None,
+        }
+    }
+
+
+@pytest.mark.parametrize(
+    '_config', ['_model_dependency_shell_errors_section_data'], indirect=True)
+def test_dependency_shell_has_errors(_config):
+    x = {'dependency': [{'command': ['null value not allowed']}]}
+
+    assert x == schema_v2.validate(_config)

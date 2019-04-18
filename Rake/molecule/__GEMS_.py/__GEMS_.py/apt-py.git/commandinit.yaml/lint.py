@@ -29,17 +29,40 @@ LOG = logger.get_logger(__name__)
 
 class Lint(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule lint
 
-    $ molecule lint
+    .. option:: molecule lint
 
-    Targeting a specific scenario:
+        Target the default scenario.
 
-    $ molecule lint --scenario-name foo
+    .. program:: molecule lint --scenario-name foo
 
-    Executing with `debug`:
+    .. option:: molecule lint --scenario-name foo
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/lint.py
     $ molecule --debug lint
+=======
+        Targeting a specific scenario.
+
+    .. program:: molecule --debug lint
+
+    .. option:: molecule --debug lint
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml lint
+
+    .. option:: molecule --base-config base.yml lint
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml lint
+
+    .. option:: molecule --env-file foo.yml lint
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/lint.py
     """
 
     def execute(self):
@@ -68,8 +91,9 @@ class Lint(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 def lint(ctx, scenario_name):  # pragma: no cover
     """ Lint the role. """
     args = ctx.obj.get('args')

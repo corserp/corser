@@ -21,6 +21,7 @@
 import os
 
 import anyconfig
+import six
 
 from molecule import interpolation
 from molecule import logger
@@ -51,6 +52,15 @@ MOLECULE_FILE = 'molecule.yml'
 MERGE_STRATEGY = anyconfig.MS_DICTS
 
 
+# https://stackoverflow.com/questions/16017397/injecting-function-call-after-init-with-decorator  # noqa
+class NewInitCaller(type):
+    def __call__(cls, *args, **kwargs):
+        obj = type.__call__(cls, *args, **kwargs)
+        obj.after_init()
+        return obj
+
+
+@six.add_metaclass(NewInitCaller)
 class Config(object):
     """
     Molecule searches the current directory for `molecule.yml` files by
@@ -88,9 +98,16 @@ class Config(object):
         self.args = args
         self.command_args = command_args
         self.ansible_args = ansible_args
-        self.config = self._combine()
+        self.config = self._get_config()
         self._action = None
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+=======
+    def after_init(self):
+        self.config = self._reget_config()
+        self._validate()
+
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
     @property
     def debug(self):
         return self.args.get('debug', False)
@@ -172,8 +189,14 @@ class Config(object):
             'MOLECULE_DRIVER_NAME': self.driver.name,
             'MOLECULE_LINT_NAME': self.lint.name,
             'MOLECULE_PROVISIONER_NAME': self.provisioner.name,
+            'MOLECULE_PROVISIONER_LINT_NAME': self.provisioner.lint.name,
             'MOLECULE_SCENARIO_NAME': self.scenario.name,
             'MOLECULE_VERIFIER_NAME': self.verifier.name,
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+=======
+            'MOLECULE_VERIFIER_LINT_NAME': self.verifier.lint.name,
+            'MOLECULE_VERIFIER_TEST_DIRECTORY': self.verifier.directory,
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
         }
 
     @property
@@ -240,7 +263,29 @@ class Config(object):
 
         return driver_name
 
-    def _combine(self):
+    def _get_config(self):
+        """
+        Perform a prioritized recursive merge of config files, and returns
+        a new dict.  Prior to merging the config files are interpolated with
+        environment variables.
+
+        :return: dict
+        """
+        return self._combine(keep_string='MOLECULE_')
+
+    def _reget_config(self):
+        """
+        Perform the same prioritized recursive merge from `get_config`, this
+        time, interpolating the `keep_string` left behind in the original
+        `get_config` call.  This is probably __very__ bad.
+
+        :return: dict
+        """
+        env = util.merge_dicts(os.environ.copy(), self.env)
+
+        return self._combine(env=env)
+
+    def _combine(self, env=os.environ, keep_string=None):
         """
         Perform a prioritized recursive merge of the `molecule_file` with
         defaults, interpolate the result with environment variables, and
@@ -248,14 +293,33 @@ class Config(object):
 
         :return: dict
         """
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
         i = interpolation.Interpolator(interpolation.TemplateWithDefaults,
                                        os.environ)
+=======
+        defaults = self._get_defaults()
+        base_config = self.args.get('base_config')
+        if base_config and os.path.exists(base_config):
+            with util.open_file(base_config) as stream:
+                s = stream.read()
+                self._preflight(s)
+                interpolated_config = self._interpolate(s, env, keep_string)
+                defaults = util.merge_dicts(
+                    defaults, util.safe_load(interpolated_config))
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
 
         base = self._get_defaults()
         with util.open_file(self.molecule_file) as stream:
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
             try:
                 interpolated_config = i.interpolate(stream.read())
                 base = self.merge_dicts(base,
+=======
+            s = stream.read()
+            self._preflight(s)
+            interpolated_config = self._interpolate(s, env, keep_string)
+            defaults = util.merge_dicts(defaults,
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
                                         util.safe_load(interpolated_config))
             except interpolation.InvalidInterpolation as e:
                 msg = ("parsing config file '{}'.\n\n"
@@ -264,7 +328,33 @@ class Config(object):
 
         schema.validate(base)
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
         return base
+=======
+    def _interpolate(self, stream, env, keep_string):
+        env = self._set_env(env)
+
+        i = interpolation.Interpolator(interpolation.TemplateWithDefaults, env)
+
+        try:
+            return i.interpolate(stream, keep_string)
+        except interpolation.InvalidInterpolation as e:
+            msg = ("parsing config file '{}'.\n\n"
+                   '{}\n{}'.format(self.molecule_file, e.place, e.string))
+            util.sysexit_with_message(msg)
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
+
+    def _set_env(self, env):
+        env_file = self.args.get('env_file')
+        if env_file and os.path.exists(env_file):
+            env = env.copy()
+            d = util.safe_load_file(env_file)
+            for k, v in d.items():
+                env[k] = v
+
+            return env
+
+        return env
 
     def _get_defaults(self):
         return {
@@ -373,6 +463,7 @@ class Config(object):
             },
         }
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
 
 def merge_dicts(a, b):
     """
@@ -399,6 +490,22 @@ def merge_dicts(a, b):
            e: "bbb"
 
     Will give an object such as::
+=======
+    def _preflight(self, data):
+        errors = schema_v2.pre_validate(data)
+        if errors:
+            msg = "Failed to validate.\n\n{}".format(errors)
+            util.sysexit_with_message(msg)
+
+    def _validate(self):
+        msg = 'Validating schema {}.'.format(self.molecule_file)
+        LOG.info(msg)
+
+        errors = schema_v2.validate(self.config)
+        if errors:
+            msg = "Failed to validate.\n\n{}".format(errors)
+            util.sysexit_with_message(msg)
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
 
         {'a': 1, 'b': [{'c': 3}], 'd': {'e': "bbb", 'f': 3}}
 

@@ -29,17 +29,40 @@ LOG = logger.get_logger(__name__)
 
 class Check(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule check
 
-    $ molecule check
+    .. option:: molecule check
 
-    Targeting a specific scenario:
+        Target the default scenario.
 
-    $ molecule check --scenario-name foo
+    .. program:: molecule check --scenario-name foo
 
-    Executing with `debug`:
+    .. option:: molecule check --scenario-name foo
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/check.py
     $ molecule --debug check
+=======
+        Targeting a specific scenario.
+
+    .. program:: molecule --debug check
+
+    .. option:: molecule --debug check
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml check
+
+    .. option:: molecule --base-config base.yml check
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml check
+
+    .. option:: molecule --env-file foo.yml check
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/check.py
     """
 
     def execute(self):
@@ -58,8 +81,9 @@ class Check(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 def check(ctx, scenario_name):  # pragma: no cover
     """
     Use the provisioner to perform a Dry-Run (destroy, dependency, create,

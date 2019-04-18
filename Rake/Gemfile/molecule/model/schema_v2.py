@@ -20,7 +20,10 @@
 
 import collections
 import copy
+<<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
 import functools
+=======
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
 import re
 
 import cerberus
@@ -177,6 +180,103 @@ def pre_validate_base_schema(env, keep_string):
         },
     }
 
+
+pre_validate_base_schema = {
+    'dependency': {
+        'type': 'dict',
+        'schema': {
+            'name': {
+                'type': 'string',
+                'molecule_env_var': True,
+            },
+        }
+    },
+    'driver': {
+        'type': 'dict',
+        'schema': {
+            'name': {
+                'type': 'string',
+                'molecule_env_var': True,
+            },
+        }
+    },
+    'lint': {
+        'type': 'dict',
+        'schema': {
+            'name': {
+                'type': 'string',
+                'molecule_env_var': True,
+            },
+        }
+    },
+    'platforms': {
+        'type': 'list',
+        'schema': {
+            'type': 'dict',
+            'schema': {
+                'registry': {
+                    'type': 'dict',
+                    'schema': {
+                        'credentials': {
+                            'type': 'dict',
+                            'schema': {
+                                'password': {
+                                    'type': 'string',
+                                    'regex': '^[{$]+[a-z0-9A-Z]+[}]*$',
+                                },
+                            }
+                        },
+                    }
+                },
+            }
+        }
+    },
+    'provisioner': {
+        'type': 'dict',
+        'schema': {
+            'name': {
+                'type': 'string',
+                'molecule_env_var': True,
+            },
+            'lint': {
+                'type': 'dict',
+                'schema': {
+                    'name': {
+                        'type': 'string',
+                        'molecule_env_var': True,
+                    },
+                }
+            },
+        }
+    },
+    'scenario': {
+        'type': 'dict',
+        'schema': {
+            'name': {
+                'type': 'string',
+                'molecule_env_var': True,
+            },
+        }
+    },
+    'verifier': {
+        'type': 'dict',
+        'schema': {
+            'name': {
+                'type': 'string',
+                'molecule_env_var': True,
+            },
+            'lint': {
+                'type': 'dict',
+                'schema': {
+                    'name': {
+                        'type': 'string',
+                        'molecule_env_var': True,
+                    },
+                }
+            },
+        }
+    },
+}
 
 base_schema = {
     'dependency': {
@@ -637,6 +737,10 @@ platforms_docker_schema = {
                                 },
                                 'password': {
                                     'type': 'string',
+<<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
+=======
+                                    'regex': '^[{$]+[a-z0-9A-Z]+[}]*$',
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
                                 },
                                 'email': {
                                     'type': 'string',
@@ -821,6 +925,7 @@ platforms_lxd_schema = {
     },
 }
 
+<<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
 platforms_linode_schema = {
     'platforms': {
         'type': 'list',
@@ -847,6 +952,8 @@ platforms_linode_schema = {
     },
 }
 
+=======
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
 dependency_command_nullable_schema = {
     'dependency': {
         'type': 'dict',
@@ -975,6 +1082,7 @@ class Validator(cerberus.Validator):
             msg = 'disallowed user provided config option'
             self._error(field, msg)
 
+<<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
     def _normalize_coerce_exposed_ports(self, value):
         """Coerce ``exposed_ports`` values to string.
 
@@ -986,6 +1094,8 @@ class Validator(cerberus.Validator):
             return str(value)
         return value
 
+=======
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
     def _validate_molecule_env_var(self, molecule_env_var, field, value):
         """ Readonly but with a custom error.
 
@@ -1002,11 +1112,19 @@ class Validator(cerberus.Validator):
                 self._error(field, msg)
 
 
+<<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
 def pre_validate(stream, env, keep_string):
     data = util.safe_load(stream)
 
     v = Validator(allow_unknown=True)
     v.validate(data, pre_validate_base_schema(env, keep_string))
+=======
+def pre_validate(stream):
+    data = util.safe_load(stream)
+
+    v = Validator(allow_unknown=True)
+    v.validate(data, pre_validate_base_schema)
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
 
     return v.errors
 
@@ -1014,8 +1132,11 @@ def pre_validate(stream, env, keep_string):
 def validate(c):
     schema = copy.deepcopy(base_schema)
 
+<<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
     util.merge_dicts(schema, base_schema)
 
+=======
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
     # Dependency
     if c['dependency']['name'] == 'shell':
         util.merge_dicts(schema, dependency_command_nullable_schema)

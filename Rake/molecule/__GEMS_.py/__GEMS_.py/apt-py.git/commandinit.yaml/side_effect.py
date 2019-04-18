@@ -32,17 +32,40 @@ class SideEffect(base.Base):
     This action has side effects and not enabled by default.   See the
     provisioners documentation for further details.
 
-    Target the default scenario:
+    .. program:: molecule side-effect
 
-    $ molecule side-effect
+    .. option:: molecule side-effect
 
-    Targeting a specific scenario:
+        Target the default scenario.
 
-    $ molecule side-effect --scenario-name foo
+    .. program:: molecule side-effect --scenario-name foo
 
-    Executing with `debug`:
+    .. option:: molecule side-effect --scenario-name foo
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/side_effect.py
     $ molecule --debug side-effect
+=======
+        Targeting a specific scenario.
+
+    .. program:: molecule --debug side-effect
+
+    .. option:: molecule --debug side-effect
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml side-effect
+
+    .. option:: molecule --base-config base.yml side-effect
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml side-effect
+
+    .. option:: molecule --env-file foo.yml side-effect
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/side_effect.py
     """
 
     def execute(self):
@@ -66,8 +89,9 @@ class SideEffect(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 def side_effect(ctx, scenario_name):  # pragma: no cover
     """ Use the provisioner to perform side-effects to the instances. """
     args = ctx.obj.get('args')

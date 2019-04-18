@@ -31,29 +31,52 @@ LOG = logger.get_logger(__name__)
 
 class Test(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule test
 
-    $ molecule test
+    .. option:: molecule test
 
-    Target all scenarios:
+        Target the default scenario.
 
-    $ molecule test --all
+    .. program:: molecule test --scenario-name foo
 
-    Targeting a specific scenario:
+    .. option:: molecule test --scenario-name foo
 
-    $ molecule test --scenario-name foo
+        Targeting a specific scenario.
 
-    Targeting a specific driver:
+    .. program:: molecule test --all
 
-    $ molecule test --driver-name foo
+    .. option:: molecule test --all
 
-    Always destroy instances at the conclusion of a Molecule run:
+        Target all scenarios.
 
-    $ molecule test --destroy=always
+    .. program:: molecule test --destroy=always
 
-    Executing with `debug`:
+    .. option:: molecule test --destroy=always
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/test.py
     $ molecule --debug test
+=======
+        Always destroy instances at the conclusion of a Molecule run.
+
+    .. program:: molecule --debug test
+
+    .. option:: molecule --debug test
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml test
+
+    .. option:: molecule --base-config base.yml test
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml test
+
+    .. option:: molecule --env-file foo.yml test
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/test.py
     """
 
     def execute(self):
@@ -70,8 +93,9 @@ class Test(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 @click.option(
     '--driver-name',
     '-d',

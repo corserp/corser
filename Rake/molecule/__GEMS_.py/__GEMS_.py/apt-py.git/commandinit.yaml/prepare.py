@@ -32,25 +32,52 @@ LOG = logger.get_logger(__name__)
 
 class Prepare(base.Base):
     """
-    Target the default scenario:
+    .. program:: molecule prepare
 
-    $ molecule prepare
+    .. option:: molecule prepare
 
-    Targeting a specific scenario:
+        Target the default scenario.
 
-    $ molecule prepare --scenario-name foo
+    .. program:: molecule prepare --scenario-name foo
 
-    Targeting a specific driver:
+    .. option:: molecule prepare --scenario-name foo
 
-    $ molecule prepare --driver-name foo
+        Targeting a specific scenario.
 
-    Force the execution fo the prepare playbook:
+    .. program:: molecule prepare --driver-name foo
 
-    $ molecule prepare --force
+    .. option:: molecule prepare --driver-name foo
 
-    Executing with `debug`:
+        Targeting a specific driver.
 
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/prepare.py
     $ molecule --debug prepare
+=======
+    .. program:: molecule prepare --force
+
+    .. option:: molecule prepare --force
+
+        Force the execution fo the prepare playbook.
+
+    .. program:: molecule --debug prepare
+
+    .. option:: molecule --debug prepare
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml prepare
+
+    .. option:: molecule --base-config base.yml prepare
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml prepare
+
+    .. option:: molecule --env-file foo.yml prepare
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/prepare.py
     """
 
     def execute(self):
@@ -87,8 +114,9 @@ class Prepare(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 @click.option(
     '--driver-name',
     '-d',

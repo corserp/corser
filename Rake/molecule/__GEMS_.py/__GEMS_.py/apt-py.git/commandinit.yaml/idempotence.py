@@ -32,17 +32,47 @@ LOG = logger.get_logger(__name__)
 
 class Idempotence(base.Base):
     """
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/idempotence.py
     Target the default scenario:
+=======
+    Runs the converge step a second time. If no tasks will be marked as changed
+    the scenario will be considered idempotent.
 
-    $ molecule idempotence
+    .. program:: molecule idempotence
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/idempotence.py
 
-    Targeting a specific scenario:
+    .. option:: molecule idempotence
 
-    $ molecule idempotence --scenario-name foo
+        Target the default scenario.
 
-    Executing with `debug`:
+    .. program:: molecule idempotence --scenario-name foo
 
+    .. option:: molecule idempotence --scenario-name foo
+
+<<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/idempotence.py
     $ molecule --debug idempotence
+=======
+        Targeting a specific scenario.
+
+    .. program:: molecule --debug idempotence
+
+    .. option:: molecule --debug idempotence
+
+        Executing with `debug`.
+
+    .. program:: molecule --base-config base.yml idempotence
+
+    .. option:: molecule --base-config base.yml idempotence
+
+        Executing with a `base-config`.
+
+    .. program:: molecule --env-file foo.yml idempotence
+
+    .. option:: molecule --env-file foo.yml idempotence
+
+        Load an env file to read variables from when rendering
+        molecule.yml.
+>>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/idempotence.py
     """
 
     def execute(self):
@@ -121,8 +151,9 @@ class Idempotence(base.Base):
 @click.option(
     '--scenario-name',
     '-s',
-    default='default',
-    help='Name of the scenario to target. (default)')
+    default=base.MOLECULE_DEFAULT_SCENARIO_NAME,
+    help='Name of the scenario to target. ({})'.format(
+        base.MOLECULE_DEFAULT_SCENARIO_NAME))
 def idempotence(ctx, scenario_name):  # pragma: no cover
     """
     Use the provisioner to configure the instances and parse the output to
