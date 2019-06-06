@@ -1,0 +1,1136 @@
+From cor-sej@cj  Tue Apr  9 21:17:15 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id 87A70803F4; Tue,  9 Apr 2019 21:17:15 +0000 (UTC)
+To: ""@cj
+Subject: $ mail
+Cc: cor-sej@cj
+Message-Id: <20190409211715.87A70803F4@cj>
+Date: Tue,  9 Apr 2019 21:17:15 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: O
+
+From cor-sej@cj  Wed Apr 10 16:19:10 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id 4F80880403; Wed, 10 Apr 2019 16:19:10 +0000 (UTC)
+To: $@cj, 2@cj, 3@cj, h@cj, q@cj, u@cj
+Subject: ej
+Cc: cor-sej@cj
+Message-Id: <20190410161910.4F80880403@cj>
+Date: Wed, 10 Apr 2019 16:19:10 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: RO
+
+From MAILER-DAEMON  Wed Apr 10 16:19:12 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 7A936803FE; Wed, 10 Apr 2019 16:19:12 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:19:12 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4F80880403.1554913152/cj"
+Message-Id: <20190410161912.7A936803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--4F80880403.1554913152/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<$@cj> (expanded from <$>): unknown user: "$"
+
+<h@cj> (expanded from <h>): unknown user: "h"
+
+<u@cj> (expanded from <u>): unknown user: "u"
+
+<3@cj> (expanded from <3>): unknown user: "3"
+
+<2@cj> (expanded from <2>): unknown user: "2"
+
+<q@cj> (expanded from <q>): unknown user: "q"
+
+--4F80880403.1554913152/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: 4F80880403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:19:10 +0000 (UTC)
+
+Final-Recipient: rfc822; $@cj
+Original-Recipient: rfc822; $
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$"
+
+Final-Recipient: rfc822; h@cj
+Original-Recipient: rfc822; h
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "h"
+
+Final-Recipient: rfc822; u@cj
+Original-Recipient: rfc822; u
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "u"
+
+Final-Recipient: rfc822; 3@cj
+Original-Recipient: rfc822; 3
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "3"
+
+Final-Recipient: rfc822; 2@cj
+Original-Recipient: rfc822; 2
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "2"
+
+Final-Recipient: rfc822; q@cj
+Original-Recipient: rfc822; q
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "q"
+
+--4F80880403.1554913152/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id 4F80880403; Wed, 10 Apr 2019 16:19:10 +0000 (UTC)
+To: $@cj, 2@cj, 3@cj, h@cj, q@cj, u@cj
+Subject: ej
+Cc: cor-sej@cj
+Message-Id: <20190410161910.4F80880403@cj>
+Date: Wed, 10 Apr 2019 16:19:10 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--4F80880403.1554913152/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:19:42 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id D4C51803FE; Wed, 10 Apr 2019 16:19:42 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:19:42 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="C3A4680403.1554913182/cj"
+Message-Id: <20190410161942.D4C51803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--C3A4680403.1554913182/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<?q@cj> (expanded from <?q>): unknown user: "?q"
+
+--C3A4680403.1554913182/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: C3A4680403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:19:42 +0000 (UTC)
+
+Final-Recipient: rfc822; ?q@cj
+Original-Recipient: rfc822; ?q
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "?q"
+
+--C3A4680403.1554913182/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id C3A4680403; Wed, 10 Apr 2019 16:19:42 +0000 (UTC)
+To: ?q@cj
+Subject: anything??
+Message-Id: <20190410161942.C3A4680403@cj>
+Date: Wed, 10 Apr 2019 16:19:42 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--C3A4680403.1554913182/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:20:23 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 0C000803FE; Wed, 10 Apr 2019 16:20:23 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:20:23 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="DBE2280403.1554913223/cj"
+Message-Id: <20190410162023.0C000803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--DBE2280403.1554913223/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<?@cj> (expanded from <?>): unknown user: "?"
+
+<ej@cj> (expanded from <ej>): unknown user: "ej"
+
+--DBE2280403.1554913223/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: DBE2280403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:20:21 +0000 (UTC)
+
+Final-Recipient: rfc822; ?@cj
+Original-Recipient: rfc822; ?
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "?"
+
+Final-Recipient: rfc822; ej@cj
+Original-Recipient: rfc822; ej
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "ej"
+
+--DBE2280403.1554913223/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id DBE2280403; Wed, 10 Apr 2019 16:20:21 +0000 (UTC)
+To: ?@cj
+Subject: cor-sej
+Cc: ej@cj
+Message-Id: <20190410162021.DBE2280403@cj>
+Date: Wed, 10 Apr 2019 16:20:21 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--DBE2280403.1554913223/cj--
+
+From cor-sej@cj  Wed Apr 10 16:21:34 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id 9A51580403; Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+To: `sej@cj
+Subject: c
+Cc: cor-sej@cj
+Message-Id: <20190410162134.9A51580403@cj>
+Date: Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: RO
+
+From MAILER-DAEMON  Wed Apr 10 16:21:34 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id B1D3F80404; Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="9A51580403.1554913294/cj"
+Message-Id: <20190410162134.B1D3F80404@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--9A51580403.1554913294/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<`sej@cj> (expanded from <`sej>): unknown user: "`sej"
+
+--9A51580403.1554913294/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: 9A51580403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+
+Final-Recipient: rfc822; `sej@cj
+Original-Recipient: rfc822; `sej
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "`sej"
+
+--9A51580403.1554913294/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id 9A51580403; Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+To: `sej@cj
+Subject: c
+Cc: cor-sej@cj
+Message-Id: <20190410162134.9A51580403@cj>
+Date: Wed, 10 Apr 2019 16:21:34 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--9A51580403.1554913294/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:23:26 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 889BC80404; Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="72CFE80403.1554913406/cj"
+Message-Id: <20190410162326.889BC80404@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--72CFE80403.1554913406/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<$@cj> (expanded from <$>): unknown user: "$"
+
+--72CFE80403.1554913406/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: 72CFE80403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+
+Final-Recipient: rfc822; $@cj
+Original-Recipient: rfc822; $
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$"
+
+--72CFE80403.1554913406/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id 72CFE80403; Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+To: cor-sej@cj
+Subject: 
+Cc: $@cj
+Message-Id: <20190410162326.72CFE80403@cj>
+Date: Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--72CFE80403.1554913406/cj--
+
+From cor-sej@cj  Wed Apr 10 16:23:26 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id 72CFE80403; Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+To: cor-sej@cj
+Subject: 
+Cc: $@cj
+Message-Id: <20190410162326.72CFE80403@cj>
+Date: Wed, 10 Apr 2019 16:23:26 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: RO
+
+From cor-sej@cj  Wed Apr 10 16:24:34 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id CE76780403; Wed, 10 Apr 2019 16:24:34 +0000 (UTC)
+To: $@cj, cor-sej@cj, seanathomas1@outlook.com, shell@cj
+Subject:  new
+Cc: new@cj
+Message-Id: <20190410162434.CE76780403@cj>
+Date: Wed, 10 Apr 2019 16:24:34 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: RO
+
+From cor-sej@cj  Wed Apr 10 16:25:57 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id 755BE80403; Wed, 10 Apr 2019 16:25:57 +0000 (UTC)
+To: $@cj, cor-sej@cj, seanathomas1@outlook.com, shell@cj
+Subject: new
+Message-Id: <20190410162557.755BE80403@cj>
+Date: Wed, 10 Apr 2019 16:25:57 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: RO
+
+hello sean
+
+From MAILER-DAEMON  Wed Apr 10 16:25:58 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 9BF7E803FE; Wed, 10 Apr 2019 16:25:58 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:25:58 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="755BE80403.1554913558/cj"
+Message-Id: <20190410162558.9BF7E803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--755BE80403.1554913558/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<seanathomas1@outlook.com>: outlook.com
+
+<$@cj> (expanded from <$>): unknown user: "$"
+
+<shell@cj> (expanded from <shell>): unknown user: "shell"
+
+--755BE80403.1554913558/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: 755BE80403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:25:57 +0000 (UTC)
+
+Final-Recipient: rfc822; seanathomas1@outlook.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: X-Postfix; outlook.com
+
+Final-Recipient: rfc822; $@cj
+Original-Recipient: rfc822; $
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$"
+
+Final-Recipient: rfc822; shell@cj
+Original-Recipient: rfc822; shell
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "shell"
+
+--755BE80403.1554913558/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id 755BE80403; Wed, 10 Apr 2019 16:25:57 +0000 (UTC)
+To: $@cj, cor-sej@cj, seanathomas1@outlook.com, shell@cj
+Subject: new
+Message-Id: <20190410162557.755BE80403@cj>
+Date: Wed, 10 Apr 2019 16:25:57 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+hello sean
+
+--755BE80403.1554913558/cj--
+
+From cor-sej@cj  Wed Apr 10 16:31:54 2019
+Return-Path: <cor-sej@cj>
+X-Original-To: cor-sej
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix, from userid 1000)
+	id C9EE080403; Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+To: ".com"@cj
+Subject: $ subject -cor
+Cc: cor-sej@cj
+Message-Id: <20190410163154.C9EE080403@cj>
+Date: Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+From: cor-sej@cj (corser john)
+Status: RO
+
+From MAILER-DAEMON  Wed Apr 10 16:21:22 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 135E6803FE; Wed, 10 Apr 2019 16:21:22 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:21:22 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="DD56480403.1554913282/cj"
+Message-Id: <20190410162122.135E6803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--DD56480403.1554913282/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<`sej@cj> (expanded from <`sej>): unknown user: "`sej"
+
+<cor@cj> (expanded from <cor>): unknown user: "cor"
+
+<`sub-cor@cj> (expanded from <`sub-cor>): unknown user: "`sub-cor"
+
+--DD56480403.1554913282/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: DD56480403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:21:20 +0000 (UTC)
+
+Final-Recipient: rfc822; `sej@cj
+Original-Recipient: rfc822; `sej
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "`sej"
+
+Final-Recipient: rfc822; cor@cj
+Original-Recipient: rfc822; cor
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "cor"
+
+Final-Recipient: rfc822; `sub-cor@cj
+Original-Recipient: rfc822; `sub-cor
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "`sub-cor"
+
+--DD56480403.1554913282/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id DD56480403; Wed, 10 Apr 2019 16:21:20 +0000 (UTC)
+To: `sub-cor@cj
+Subject:  
+Cc: `sej@cj, cor@cj
+Message-Id: <20190410162120.DD56480403@cj>
+Date: Wed, 10 Apr 2019 16:21:20 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--DD56480403.1554913282/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:22:19 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 1E726803FE; Wed, 10 Apr 2019 16:22:19 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:22:19 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="D20C280403.1554913339/cj"
+Message-Id: <20190410162219.1E726803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--D20C280403.1554913339/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<"$subject:"@cj> (expanded from <"$subject:">): unknown user: "$subject:"
+
+<new@cj> (expanded from <new>): unknown user: "new"
+
+<seanathomas1@cj> (expanded from <seanathomas1>): unknown user: "seanathomas1"
+
+--D20C280403.1554913339/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: D20C280403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:22:17 +0000 (UTC)
+
+Final-Recipient: rfc822; "$subject:"@cj
+Original-Recipient: rfc822; "$subject:"
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$subject:"
+
+Final-Recipient: rfc822; new@cj
+Original-Recipient: rfc822; new
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "new"
+
+Final-Recipient: rfc822; seanathomas1@cj
+Original-Recipient: rfc822; seanathomas1
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "seanathomas1"
+
+--D20C280403.1554913339/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id D20C280403; Wed, 10 Apr 2019 16:22:17 +0000 (UTC)
+To: seanathomas1@cj
+Subject: new
+Cc: "$subject:"@cj, new@cj
+Message-Id: <20190410162217.D20C280403@cj>
+Date: Wed, 10 Apr 2019 16:22:17 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--D20C280403.1554913339/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:22:45 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 1866D803FE; Wed, 10 Apr 2019 16:22:45 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:22:45 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="C999E80403.1554913365/cj"
+Message-Id: <20190410162245.1866D803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--C999E80403.1554913365/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<$@cj> (expanded from <$>): unknown user: "$"
+
+<subject@cj> (expanded from <subject>): unknown user: "subject"
+
+<cor@cj> (expanded from <cor>): unknown user: "cor"
+
+<`sej@cj> (expanded from <`sej>): unknown user: "`sej"
+
+--C999E80403.1554913365/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: C999E80403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:22:43 +0000 (UTC)
+
+Final-Recipient: rfc822; $@cj
+Original-Recipient: rfc822; $
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$"
+
+Final-Recipient: rfc822; subject@cj
+Original-Recipient: rfc822; subject
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "subject"
+
+Final-Recipient: rfc822; cor@cj
+Original-Recipient: rfc822; cor
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "cor"
+
+Final-Recipient: rfc822; `sej@cj
+Original-Recipient: rfc822; `sej
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "`sej"
+
+--C999E80403.1554913365/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id C999E80403; Wed, 10 Apr 2019 16:22:43 +0000 (UTC)
+To: $@cj, subject@cj
+Subject:  subject$ new
+Cc: `sej@cj, cor@cj
+Message-Id: <20190410162243.C999E80403@cj>
+Date: Wed, 10 Apr 2019 16:22:43 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--C999E80403.1554913365/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:23:49 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 12E3D803FE; Wed, 10 Apr 2019 16:23:49 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:23:49 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="0584C80403.1554913429/cj"
+Message-Id: <20190410162349.12E3D803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--0584C80403.1554913429/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<$@cj> (expanded from <$>): unknown user: "$"
+
+--0584C80403.1554913429/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: 0584C80403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:23:48 +0000 (UTC)
+
+Final-Recipient: rfc822; $@cj
+Original-Recipient: rfc822; $
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$"
+
+--0584C80403.1554913429/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id 0584C80403; Wed, 10 Apr 2019 16:23:48 +0000 (UTC)
+Subject:  $
+Cc: $@cj
+Message-Id: <20190410162349.0584C80403@cj>
+Date: Wed, 10 Apr 2019 16:23:48 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+cor-sej
+
+--0584C80403.1554913429/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:24:37 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id 31E5B803FE; Wed, 10 Apr 2019 16:24:37 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:24:37 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="CE76780403.1554913477/cj"
+Message-Id: <20190410162437.31E5B803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--CE76780403.1554913477/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<$@cj> (expanded from <$>): unknown user: "$"
+
+<shell@cj> (expanded from <shell>): unknown user: "shell"
+
+<seanathomas1@outlook.com>: outlook.com
+
+<new@cj> (expanded from <new>): unknown user: "new"
+
+--CE76780403.1554913477/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: CE76780403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:24:34 +0000 (UTC)
+
+Final-Recipient: rfc822; $@cj
+Original-Recipient: rfc822; $
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "$"
+
+Final-Recipient: rfc822; shell@cj
+Original-Recipient: rfc822; shell
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "shell"
+
+Final-Recipient: rfc822; seanathomas1@outlook.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: X-Postfix; outlook.com
+
+Final-Recipient: rfc822; new@cj
+Original-Recipient: rfc822; new
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "new"
+
+--CE76780403.1554913477/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id CE76780403; Wed, 10 Apr 2019 16:24:34 +0000 (UTC)
+To: $@cj, cor-sej@cj, seanathomas1@outlook.com, shell@cj
+Subject:  new
+Cc: new@cj
+Message-Id: <20190410162434.CE76780403@cj>
+Date: Wed, 10 Apr 2019 16:24:34 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--CE76780403.1554913477/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:31:54 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id E563D80404; Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="C9EE080403.1554913914/cj"
+Message-Id: <20190410163154.E563D80404@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--C9EE080403.1554913914/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<".com"@cj> (expanded from <".com">): unknown user: ".com"
+
+--C9EE080403.1554913914/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: C9EE080403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+
+Final-Recipient: rfc822; ".com"@cj
+Original-Recipient: rfc822; ".com"
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: ".com"
+
+--C9EE080403.1554913914/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id C9EE080403; Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+To: ".com"@cj
+Subject: $ subject -cor
+Cc: cor-sej@cj
+Message-Id: <20190410163154.C9EE080403@cj>
+Date: Wed, 10 Apr 2019 16:31:54 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--C9EE080403.1554913914/cj--
+
+From MAILER-DAEMON  Wed Apr 10 16:32:50 2019
+Return-Path: <>
+X-Original-To: cor-sej@cj
+Delivered-To: cor-sej@cj
+Received: by cj (Postfix)
+	id BFA99803FE; Wed, 10 Apr 2019 16:32:50 +0000 (UTC)
+Date: Wed, 10 Apr 2019 16:32:50 +0000 (UTC)
+From: MAILER-DAEMON@cj (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: cor-sej@cj
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="B0A0D80403.1554913970/cj"
+Message-Id: <20190410163250.BFA99803FE@cj>
+Status: RO
+
+This is a MIME-encapsulated message.
+
+--B0A0D80403.1554913970/cj
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host cj.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<null$@cj> (expanded from <null$>): unknown user: "null$"
+
+--B0A0D80403.1554913970/cj
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cj
+X-Postfix-Queue-ID: B0A0D80403
+X-Postfix-Sender: rfc822; cor-sej@cj
+Arrival-Date: Wed, 10 Apr 2019 16:32:50 +0000 (UTC)
+
+Final-Recipient: rfc822; null$@cj
+Original-Recipient: rfc822; null$
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "null$"
+
+--B0A0D80403.1554913970/cj
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <cor-sej@cj>
+Received: by cj (Postfix, from userid 1000)
+	id B0A0D80403; Wed, 10 Apr 2019 16:32:50 +0000 (UTC)
+To: null$@cj
+Subject: hello
+Message-Id: <20190410163250.B0A0D80403@cj>
+Date: Wed, 10 Apr 2019 16:32:50 +0000 (UTC)
+From: cor-sej@cj (corser john)
+
+
+--B0A0D80403.1554913970/cj--
+

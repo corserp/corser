@@ -1,6 +1,14 @@
 The MIT License (MIT)
 
+<<<<<<< HEAD
 Copyright (c) 2019 vagrant
+=======
+<<<<<<< HEAD
+Copyright (c) 2018 Sean William Thomas
+=======
+Copyright (c) 2018 TODO: Write your name
+>>>>>>> e84d0d35e628629e8ac785d79f62e1399f8d5f42
+>>>>>>> 60b8266cb4a5b88204f1b6b28e366c88b7270f8d
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

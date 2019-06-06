@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 60b8266cb4a5b88204f1b6b28e366c88b7270f8d
 /.bundle/
 /.yardoc
 /_yardoc/
@@ -6,3 +10,28 @@
 /pkg/
 /spec/reports/
 /tmp/
+<<<<<<< HEAD
+=======
+=======
+*.egg-info/
+*.py[cod]
+*.retry
+.bundle/
+.cache/
+.coverage
+.coverage.*
+.eggs/
+.tox/
+.vagrant/
+.pytest_cache/
+build/
+dist/
+doc/build/
+htmlcov/
+pytestdebug.log
+ubuntu-xenial-16.04-cloudimg-console.log
+.python-version
+coverage.xml
+pip-wheel-metadata
+>>>>>>> 0bcce3509ee0740f20724d18369f4c7eb6751b3d
+>>>>>>> 60b8266cb4a5b88204f1b6b28e366c88b7270f8d
