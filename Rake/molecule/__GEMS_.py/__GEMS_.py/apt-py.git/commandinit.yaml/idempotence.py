@@ -32,14 +32,24 @@ LOG = logger.get_logger(__name__)
 
 class Idempotence(base.Base):
     """
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/idempotence.py
     Target the default scenario:
 =======
+=======
+<<<<<<< HEAD:molecule/command/idempotence.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     Runs the converge step a second time. If no tasks will be marked as changed
     the scenario will be considered idempotent.
 
     .. program:: molecule idempotence
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/idempotence.py
+=======
+=======
+    Target the default scenario:
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/idempotence.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
     .. option:: molecule idempotence
 
@@ -49,9 +59,13 @@ class Idempotence(base.Base):
 
     .. option:: molecule idempotence --scenario-name foo
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/idempotence.py
     $ molecule --debug idempotence
 =======
+=======
+<<<<<<< HEAD:molecule/command/idempotence.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
         Targeting a specific scenario.
 
     .. program:: molecule --debug idempotence
@@ -72,7 +86,13 @@ class Idempotence(base.Base):
 
         Load an env file to read variables from when rendering
         molecule.yml.
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/idempotence.py
+=======
+=======
+    $ molecule --debug idempotence
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/idempotence.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     """
 
     def execute(self):

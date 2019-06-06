@@ -52,9 +52,13 @@ class Login(base.Base):
 
     .. program:: molecule login --host hostname
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/login.py
     $ molecule --debug login
 =======
+=======
+<<<<<<< HEAD:molecule/command/login.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     .. option:: molecule login --host hostname
 
         Targeting a specific running host.
@@ -83,7 +87,13 @@ class Login(base.Base):
 
         Load an env file to read variables from when rendering
         molecule.yml.
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/login.py
+=======
+=======
+    $ molecule --debug login
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/login.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     """
 
     def __init__(self, c):
@@ -98,12 +108,21 @@ class Login(base.Base):
         :return: None
         """
         c = self._config
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/login.py
         if not c.state.created and (c.driver.delegated
                                     and not c.driver.managed):
 =======
         if ((not c.state.created) and c.driver.managed):
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/login.py
+=======
+<<<<<<< HEAD:molecule/command/login.py
+        if ((not c.state.created) and c.driver.managed):
+=======
+        if not c.state.created and (c.driver.delegated
+                                    and not c.driver.managed):
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/login.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
             msg = 'Instances not created.  Please create instances first.'
             util.sysexit_with_message(msg)
 

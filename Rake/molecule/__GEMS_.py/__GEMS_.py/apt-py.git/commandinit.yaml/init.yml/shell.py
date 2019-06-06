@@ -33,12 +33,21 @@ from molecule import util
 
 click_completion.init()
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
 =======
 LOCAL_CONFIG = os.path.expanduser('~/.config/molecule/config.yml')
 ENV_FILE = '.env.yml'
 
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/shell.py
+=======
+<<<<<<< HEAD:molecule/shell.py
+LOCAL_CONFIG = os.path.expanduser('~/.config/molecule/config.yml')
+ENV_FILE = '.env.yml'
+
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
 def _get_python_version():  # pragma: no cover
     return sys.version_info[:2]
@@ -82,11 +91,15 @@ def _allowed(ctx, param, value):  # pragma: no cover
     default=False,
     callback=_allowed,
     help='Enable or disable debug mode. Default is disabled.')
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
 @click.version_option(version=molecule.__version__)
 @click.pass_context
 def main(ctx, debug):  # pragma: no cover
 =======
+=======
+<<<<<<< HEAD:molecule/shell.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 @click.option(
     '--base-config',
     '-c',
@@ -103,7 +116,15 @@ def main(ctx, debug):  # pragma: no cover
 @click.version_option(version=molecule.__version__)
 @click.pass_context
 def main(ctx, debug, base_config, env_file):  # pragma: no cover
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/shell.py
+=======
+=======
+@click.version_option(version=molecule.__version__)
+@click.pass_context
+def main(ctx, debug):  # pragma: no cover
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     """
     \b
      _____     _             _
@@ -120,11 +141,19 @@ def main(ctx, debug, base_config, env_file):  # pragma: no cover
     ctx.obj = {}
     ctx.obj['args'] = {}
     ctx.obj['args']['debug'] = debug
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
 =======
     ctx.obj['args']['base_config'] = base_config
     ctx.obj['args']['env_file'] = env_file
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/shell.py
+=======
+<<<<<<< HEAD:molecule/shell.py
+    ctx.obj['args']['base_config'] = base_config
+    ctx.obj['args']['env_file'] = env_file
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/shell.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
 
 main.add_command(command.check.check)

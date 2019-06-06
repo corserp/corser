@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Bones
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bones`. To experiment with that code, run `bin/console` for an interactive prompt.
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 # Psych
 =======
 # Rake
@@ -64,6 +67,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Code of Conduct
 
@@ -71,9 +75,14 @@ Everyone interacting in the Bones project’s codebases, issue trackers, chat ro
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
+=======
 
 ## Code of Conduct
 
 Everyone interacting in the Rake project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rake/blob/master/CODE_OF_CONDUCT.md).
 >>>>>>> e84d0d35e628629e8ac785d79f62e1399f8d5f42
+<<<<<<< HEAD
 >>>>>>> 60b8266cb4a5b88204f1b6b28e366c88b7270f8d
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac

@@ -39,9 +39,13 @@ class Check(base.Base):
 
     .. option:: molecule check --scenario-name foo
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/check.py
     $ molecule --debug check
 =======
+=======
+<<<<<<< HEAD:molecule/command/check.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
         Targeting a specific scenario.
 
     .. program:: molecule --debug check
@@ -62,7 +66,13 @@ class Check(base.Base):
 
         Load an env file to read variables from when rendering
         molecule.yml.
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/check.py
+=======
+=======
+    $ molecule --debug check
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/check.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     """
 
     def execute(self):

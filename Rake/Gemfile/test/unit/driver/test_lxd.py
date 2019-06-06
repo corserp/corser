@@ -23,9 +23,13 @@ import os
 import pytest
 
 from molecule import config
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
 from molecule.driver import lxd
 =======
+=======
+<<<<<<< HEAD:test/unit/driver/test_delegated.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 from molecule.driver import delegated
 
 
@@ -52,7 +56,13 @@ def _driver_unmanaged_section_data():
             }
         }
     }
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
+=======
+=======
+from molecule.driver import lxd
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/driver/test_lxd.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
 
 @pytest.fixture
@@ -75,10 +85,14 @@ def test_name_property(_instance):
     assert 'lxd' == _instance.name
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
 def test_options_property(_instance):
     x = {'managed': True}
 =======
+=======
+<<<<<<< HEAD:test/unit/driver/test_delegated.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 @pytest.mark.parametrize(
     'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
 def test_options_property(_instance):
@@ -99,16 +113,31 @@ def test_options_property_when_managed(_instance):
     x = {
         'managed': True,
     }
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
+=======
+=======
+def test_options_property(_instance):
+    x = {'managed': True}
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/driver/test_lxd.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
     assert x == _instance.options
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
 =======
 @pytest.mark.parametrize(
     'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
+=======
+<<<<<<< HEAD:test/unit/driver/test_delegated.py
+@pytest.mark.parametrize(
+    'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/driver/test_lxd.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 def test_login_cmd_template_property(_instance):
     assert 'lxc exec {instance} bash' == _instance.login_cmd_template
 
@@ -168,8 +197,12 @@ def test_login_options(_instance):
     assert {'instance': 'foo'} == _instance.login_options('foo')
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/driver/test_lxd.py
 =======
+=======
+<<<<<<< HEAD:test/unit/driver/test_delegated.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 @pytest.mark.parametrize(
     'config_instance', ['_driver_managed_section_data'], indirect=True)
 def test_login_options_when_managed(mocker, _instance):
@@ -195,7 +228,12 @@ def test_login_options_when_managed(mocker, _instance):
 
 @pytest.mark.parametrize(
     'config_instance', ['_driver_unmanaged_section_data'], indirect=True)
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/driver/test_delegated.py
+=======
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/driver/test_lxd.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 def test_ansible_connection_options(_instance):
     x = {'ansible_connection': 'lxd'}
 

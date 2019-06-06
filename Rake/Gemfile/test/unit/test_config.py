@@ -312,6 +312,7 @@ def test_env(config_instance):
         'MOLECULE_INVENTORY_FILE': config_instance.provisioner.inventory_file,
         'MOLECULE_EPHEMERAL_DIRECTORY':
         config_instance.scenario.ephemeral_directory,
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/test_config.py
         'MOLECULE_SCENARIO_DIRECTORY': config_instance.scenario.directory,
         'MOLECULE_PROJECT_DIRECTORY': config_instance.project_directory,
@@ -326,6 +327,9 @@ def test_env(config_instance):
         'MOLECULE_VERIFIER_LINT_NAME': 'flake8',
         'MOLECULE_VERIFIER_TEST_DIRECTORY': config_instance.verifier.directory,
 =======
+=======
+<<<<<<< HEAD:test/unit/test_config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
         'MOLECULE_SCENARIO_DIRECTORY':
         config_instance.scenario.directory,
         'MOLECULE_INSTANCE_CONFIG':
@@ -348,7 +352,24 @@ def test_env(config_instance):
         'flake8',
         'MOLECULE_VERIFIER_TEST_DIRECTORY':
         config_instance.verifier.directory,
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/test_config.py
+=======
+=======
+        'MOLECULE_SCENARIO_DIRECTORY': config_instance.scenario.directory,
+        'MOLECULE_PROJECT_DIRECTORY': config_instance.project_directory,
+        'MOLECULE_INSTANCE_CONFIG': config_instance.driver.instance_config,
+        'MOLECULE_DEPENDENCY_NAME': 'galaxy',
+        'MOLECULE_DRIVER_NAME': 'docker',
+        'MOLECULE_LINT_NAME': 'yamllint',
+        'MOLECULE_PROVISIONER_NAME': 'ansible',
+        'MOLECULE_PROVISIONER_LINT_NAME': 'ansible-lint',
+        'MOLECULE_SCENARIO_NAME': 'default',
+        'MOLECULE_VERIFIER_NAME': 'testinfra',
+        'MOLECULE_VERIFIER_LINT_NAME': 'flake8',
+        'MOLECULE_VERIFIER_TEST_DIRECTORY': config_instance.verifier.directory,
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/test_config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     }
 
     assert x == config_instance.env
@@ -491,6 +512,7 @@ def test_interpolate_raises_on_failed_interpolation(patched_logger_critical,
     patched_logger_critical.assert_called_once_with(msg)
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/test_config.py
 def test_get_defaults(config_instance, mocker):
     mocker.patch.object(config_instance, 'molecule_file',
@@ -498,6 +520,9 @@ def test_get_defaults(config_instance, mocker):
     defaults = config_instance._get_defaults()
     assert defaults['scenario']['name'] == 'test_scenario_name'
 =======
+=======
+<<<<<<< HEAD:test/unit/test_config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 def test_set_env(config_instance):
     config_instance.args = {'env_file': '.env'}
     contents = {
@@ -514,7 +539,17 @@ def test_set_env_returns_original_env_when_env_file_not_found(config_instance):
     env = config_instance._set_env({})
 
     assert {} == env
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/test_config.py
+=======
+=======
+def test_get_defaults(config_instance, mocker):
+    mocker.patch.object(config_instance, 'molecule_file',
+                        '/path/to/test_scenario_name/molecule.yml')
+    defaults = config_instance._get_defaults()
+    assert defaults['scenario']['name'] == 'test_scenario_name'
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/test_config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
 
 def test_preflight(mocker, config_instance, patched_logger_info):
@@ -523,11 +558,19 @@ def test_preflight(mocker, config_instance, patched_logger_info):
 
     config_instance._preflight('foo')
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/unit/test_config.py
     m.assert_called_once_with('foo', os.environ, config.MOLECULE_KEEP_STRING)
 =======
     m.assert_called_once_with('foo')
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/unit/test_config.py
+=======
+<<<<<<< HEAD:test/unit/test_config.py
+    m.assert_called_once_with('foo')
+=======
+    m.assert_called_once_with('foo', os.environ, config.MOLECULE_KEEP_STRING)
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/unit/test_config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
 
 def test_preflight_exists_when_validation_fails(

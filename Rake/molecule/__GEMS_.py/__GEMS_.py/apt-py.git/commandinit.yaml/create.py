@@ -44,9 +44,13 @@ class Create(base.Base):
 
     .. program:: molecule create --driver-name foo
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/create.py
     $ molecule --debug create
 =======
+=======
+<<<<<<< HEAD:molecule/command/create.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     .. option:: molecule create --driver-name foo
 
         Targeting a specific driver.
@@ -69,7 +73,13 @@ class Create(base.Base):
 
         Load an env file to read variables from when rendering
         molecule.yml.
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/command/create.py
+=======
+=======
+    $ molecule --debug create
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/create.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     """
 
     def execute(self):

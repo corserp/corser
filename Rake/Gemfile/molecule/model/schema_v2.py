@@ -20,10 +20,17 @@
 
 import collections
 import copy
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
 import functools
 =======
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
+=======
+<<<<<<< HEAD:molecule/model/schema_v2.py
+=======
+import functools
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/molecule/model/schema_v2.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 import re
 
 import cerberus
@@ -737,10 +744,17 @@ platforms_docker_schema = {
                                 },
                                 'password': {
                                     'type': 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
 =======
                                     'regex': '^[{$]+[a-z0-9A-Z]+[}]*$',
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
+=======
+<<<<<<< HEAD:molecule/model/schema_v2.py
+                                    'regex': '^[{$]+[a-z0-9A-Z]+[}]*$',
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/molecule/model/schema_v2.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
                                 },
                                 'email': {
                                     'type': 'string',
@@ -925,7 +939,12 @@ platforms_lxd_schema = {
     },
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
+=======
+<<<<<<< HEAD:molecule/model/schema_v2.py
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 platforms_linode_schema = {
     'platforms': {
         'type': 'list',
@@ -952,8 +971,12 @@ platforms_linode_schema = {
     },
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/molecule/model/schema_v2.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 dependency_command_nullable_schema = {
     'dependency': {
         'type': 'dict',
@@ -1082,7 +1105,12 @@ class Validator(cerberus.Validator):
             msg = 'disallowed user provided config option'
             self._error(field, msg)
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
+=======
+<<<<<<< HEAD:molecule/model/schema_v2.py
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     def _normalize_coerce_exposed_ports(self, value):
         """Coerce ``exposed_ports`` values to string.
 
@@ -1094,8 +1122,12 @@ class Validator(cerberus.Validator):
             return str(value)
         return value
 
+<<<<<<< HEAD
 =======
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/molecule/model/schema_v2.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     def _validate_molecule_env_var(self, molecule_env_var, field, value):
         """ Readonly but with a custom error.
 
@@ -1112,19 +1144,29 @@ class Validator(cerberus.Validator):
                 self._error(field, msg)
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
 def pre_validate(stream, env, keep_string):
-    data = util.safe_load(stream)
-
-    v = Validator(allow_unknown=True)
-    v.validate(data, pre_validate_base_schema(env, keep_string))
 =======
+<<<<<<< HEAD:molecule/model/schema_v2.py
 def pre_validate(stream):
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     data = util.safe_load(stream)
 
     v = Validator(allow_unknown=True)
     v.validate(data, pre_validate_base_schema)
+=======
+def pre_validate(stream, env, keep_string):
+    data = util.safe_load(stream)
+
+    v = Validator(allow_unknown=True)
+<<<<<<< HEAD
+    v.validate(data, pre_validate_base_schema)
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
+=======
+    v.validate(data, pre_validate_base_schema(env, keep_string))
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/molecule/model/schema_v2.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
     return v.errors
 
@@ -1132,11 +1174,19 @@ def pre_validate(stream):
 def validate(c):
     schema = copy.deepcopy(base_schema)
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/molecule/model/schema_v2.py
     util.merge_dicts(schema, base_schema)
 
 =======
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/model/schema_v2.py
+=======
+<<<<<<< HEAD:molecule/model/schema_v2.py
+=======
+    util.merge_dicts(schema, base_schema)
+
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/molecule/model/schema_v2.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     # Dependency
     if c['dependency']['name'] == 'shell':
         util.merge_dicts(schema, dependency_command_nullable_schema)

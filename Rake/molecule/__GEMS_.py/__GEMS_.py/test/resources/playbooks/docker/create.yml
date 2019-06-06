@@ -9,8 +9,12 @@
     molecule_ephemeral_directory: "{{ lookup('env', 'MOLECULE_EPHEMERAL_DIRECTORY') }}"
     molecule_yml: "{{ lookup('file', molecule_file) | molecule_from_yaml }}"
   tasks:
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/test/resources/playbooks/docker/create.yml
 =======
+=======
+<<<<<<< HEAD:test/resources/playbooks/docker/create.yml
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     - name: Log into a Docker registry
       docker_login:
         username: "{{ item.registry.credentials.username }}"
@@ -24,7 +28,12 @@
         - item.registry.credentials is defined
         - item.registry.credentials.username is defined
 
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/resources/playbooks/docker/create.yml
+=======
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/test/resources/playbooks/docker/create.yml
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     - name: Create Dockerfiles from image names
       template:
         src: Dockerfile.j2

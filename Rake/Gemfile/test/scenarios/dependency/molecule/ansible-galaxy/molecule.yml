@@ -1,11 +1,20 @@
 ---
 dependency:
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/Gemfile/test/scenarios/dependency/molecule/ansible-galaxy/molecule.yml
   name: galaxy
 =======
   name: shell
   command: $MOLECULE_SCENARIO_DIRECTORY/run.bash
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:test/scenarios/dependency/molecule/shell/molecule.yml
+=======
+<<<<<<< HEAD:test/scenarios/dependency/molecule/shell/molecule.yml
+  name: shell
+  command: $MOLECULE_SCENARIO_DIRECTORY/run.bash
+=======
+  name: galaxy
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/Gemfile/test/scenarios/dependency/molecule/ansible-galaxy/molecule.yml
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 driver:
   name: docker
   # NOTE(retr0h): Required for functional tests, since

@@ -101,13 +101,22 @@ class Config(object):
         self.config = self._get_config()
         self._action = None
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
 =======
+=======
+<<<<<<< HEAD:molecule/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     def after_init(self):
         self.config = self._reget_config()
         self._validate()
 
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
+=======
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     @property
     def debug(self):
         return self.args.get('debug', False)
@@ -192,11 +201,19 @@ class Config(object):
             'MOLECULE_PROVISIONER_LINT_NAME': self.provisioner.lint.name,
             'MOLECULE_SCENARIO_NAME': self.scenario.name,
             'MOLECULE_VERIFIER_NAME': self.verifier.name,
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
 =======
             'MOLECULE_VERIFIER_LINT_NAME': self.verifier.lint.name,
             'MOLECULE_VERIFIER_TEST_DIRECTORY': self.verifier.directory,
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
+=======
+<<<<<<< HEAD:molecule/config.py
+            'MOLECULE_VERIFIER_LINT_NAME': self.verifier.lint.name,
+            'MOLECULE_VERIFIER_TEST_DIRECTORY': self.verifier.directory,
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
         }
 
     @property
@@ -293,10 +310,14 @@ class Config(object):
 
         :return: dict
         """
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
         i = interpolation.Interpolator(interpolation.TemplateWithDefaults,
                                        os.environ)
 =======
+=======
+<<<<<<< HEAD:molecule/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
         defaults = self._get_defaults()
         base_config = self.args.get('base_config')
         if base_config and os.path.exists(base_config):
@@ -306,6 +327,7 @@ class Config(object):
                 interpolated_config = self._interpolate(s, env, keep_string)
                 defaults = util.merge_dicts(
                     defaults, util.safe_load(interpolated_config))
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
 
         base = self._get_defaults()
@@ -315,11 +337,29 @@ class Config(object):
                 interpolated_config = i.interpolate(stream.read())
                 base = self.merge_dicts(base,
 =======
+=======
+=======
+        i = interpolation.Interpolator(interpolation.TemplateWithDefaults,
+                                       os.environ)
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+
+        base = self._get_defaults()
+        with util.open_file(self.molecule_file) as stream:
+<<<<<<< HEAD:molecule/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
             s = stream.read()
             self._preflight(s)
             interpolated_config = self._interpolate(s, env, keep_string)
             defaults = util.merge_dicts(defaults,
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
+=======
+=======
+            try:
+                interpolated_config = i.interpolate(stream.read())
+                base = self.merge_dicts(base,
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
                                         util.safe_load(interpolated_config))
             except interpolation.InvalidInterpolation as e:
                 msg = ("parsing config file '{}'.\n\n"
@@ -328,9 +368,13 @@ class Config(object):
 
         schema.validate(base)
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
         return base
 =======
+=======
+<<<<<<< HEAD:molecule/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
     def _interpolate(self, stream, env, keep_string):
         env = self._set_env(env)
 
@@ -342,7 +386,13 @@ class Config(object):
             msg = ("parsing config file '{}'.\n\n"
                    '{}\n{}'.format(self.molecule_file, e.place, e.string))
             util.sysexit_with_message(msg)
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
+=======
+=======
+        return base
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
     def _set_env(self, env):
         env_file = self.args.get('env_file')
@@ -463,7 +513,26 @@ class Config(object):
             },
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+=======
+<<<<<<< HEAD:molecule/config.py
+    def _preflight(self, data):
+        errors = schema_v2.pre_validate(data)
+        if errors:
+            msg = "Failed to validate.\n\n{}".format(errors)
+            util.sysexit_with_message(msg)
+
+    def _validate(self):
+        msg = 'Validating schema {}.'.format(self.molecule_file)
+        LOG.info(msg)
+
+        errors = schema_v2.validate(self.config)
+        if errors:
+            msg = "Failed to validate.\n\n{}".format(errors)
+            util.sysexit_with_message(msg)
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
 def merge_dicts(a, b):
     """
@@ -490,6 +559,7 @@ def merge_dicts(a, b):
            e: "bbb"
 
     Will give an object such as::
+<<<<<<< HEAD
 =======
     def _preflight(self, data):
         errors = schema_v2.pre_validate(data)
@@ -506,6 +576,9 @@ def merge_dicts(a, b):
             msg = "Failed to validate.\n\n{}".format(errors)
             util.sysexit_with_message(msg)
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/config.py
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/config.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
         {'a': 1, 'b': [{'c': 3}], 'd': {'e': "bbb", 'f': 3}}
 

@@ -49,6 +49,7 @@ class Docker(base.Base):
             registry:
               url: registry.example.com
             command: sleep infinity
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/driver/docker.py
             privileged: "{{ item.privileged | default(omit) }}"
 =======
@@ -56,6 +57,15 @@ class Docker(base.Base):
             security_opts:
               - seccomp=unconfined
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/driver/docker.py
+=======
+<<<<<<< HEAD:molecule/driver/docker.py
+            privileged: True|False
+            security_opts:
+              - seccomp=unconfined
+=======
+            privileged: "{{ item.privileged | default(omit) }}"
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/driver/docker.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
             volumes:
               - /sys/fs/cgroup:/sys/fs/cgroup:ro
             tmpfs:

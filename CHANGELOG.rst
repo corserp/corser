@@ -3,6 +3,10 @@ History
 *******
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 Unreleased
 ==========
 
@@ -167,17 +171,28 @@ the Ansible team.
 * Corrected command syntax.
 * Delegated driver acts as managed.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 2.14
 ====
 
 * Add pre-validation.
 <<<<<<< HEAD
+<<<<<<< HEAD
 * ``MOLECULE_`` special variables available in molecule.yml.
 =======
 * MOLECULE_ special variables available in molecule.yml.
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4
+=======
+* MOLECULE_ special variables available in molecule.yml.
+=======
+* ``MOLECULE_`` special variables available in molecule.yml.
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 * Log Vagrant stdout to a file in MOLECULE_EPHEMERAL_DIRECTORY.
 * Reintroduce base config merging.
 * Corrected unit tests to work with tox.
@@ -192,10 +207,17 @@ Important Changes
 -----------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * ``MOLECULE_`` special variables available in molecule.yml.
 =======
 * MOLECULE_ special variables available in molecule.yml.
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4
+=======
+* MOLECULE_ special variables available in molecule.yml.
+=======
+* ``MOLECULE_`` special variables available in molecule.yml.
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 * Molecule introduces a new CLI option `--base-config`, which is
   loaded prior to each scenario's `molecule.yml`.  This allows
   developers to specify a base config, to help reduce repetition

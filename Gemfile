@@ -1,11 +1,14 @@
 source "https://rubygems.org"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # Specify your gem's dependencies in bones.gemspec
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 git_source(:github) {|corserp| "https://github.com/#{corser}" }
 =======
 git_source(:github) {|master| "https://github.com/naturebigetloop#{gem}" }

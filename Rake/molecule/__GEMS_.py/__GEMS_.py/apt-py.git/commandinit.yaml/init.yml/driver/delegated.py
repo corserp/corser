@@ -173,8 +173,12 @@ class Delegated(base.Base):
                 # instance_config is not on disk.
                 return {}
         return self.options['ansible_connection_options']
+<<<<<<< HEAD
 <<<<<<< HEAD:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/driver/delegated.py
 =======
+=======
+<<<<<<< HEAD:molecule/driver/delegated.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 
     def _created(self):
         if self.managed:
@@ -187,4 +191,9 @@ class Delegated(base.Base):
 
         return next(item for item in instance_config_dict
                     if item['instance'] == instance_name)
+<<<<<<< HEAD
 >>>>>>> 0fa82e7a3daa84ebd03d8af67403c6551113d3e4:molecule/driver/delegated.py
+=======
+=======
+>>>>>>> b1eb06d375fd544a849fcf5c39f51dc334b87338:Rake/molecule/__GEMS_.py/__GEMS_.py/apt-py.git/commandinit.yaml/init.yml/driver/delegated.py
+>>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
