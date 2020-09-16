@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# Psych
+# Psych5RcAv2LlSkh0wqXMBsycPpXALOgtjE
 =======
-# Rake
+# Rake8d67a8f5-375d-4621-8af5-69295aa7dc46
 >>>>>>> e84d0d35e628629e8ac785d79f62e1399f8d5f42
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rake`. To experiment with that code, run `bin/console` for an interactive prompt.
@@ -47,4 +47,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the Rake project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rake/blob/master/CODE_OF_CONDUCT.md).
->>>>>>> e84d0d35e628629e8ac785d79f62e1399f8d5f42
+>>>>>>> @greetscoot
