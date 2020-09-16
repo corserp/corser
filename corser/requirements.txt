@@ -10,7 +10,7 @@ python-gilt==1.2.1
 Jinja2==2.10
 pbr==3.0.1
 pexpect==4.2.1
-psutil==5.2.2; sys_platform!="win32" and sys_platform!="cygwin"
+psutil==5.6.6; sys_platform!="win32" and sys_platform!="cygwin"
 PyYAML==5.1
 sh==1.12.14
 six==1.11.0 
