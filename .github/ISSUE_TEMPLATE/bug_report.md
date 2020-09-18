@@ -1,8 +1,12 @@
 ---
-name: 🐛 Bug report
+name: "\U0001F41B Bug report"
 about: Create a report to help us improve
+title: ''
 labels: bug
+assignees: ''
+
 ---
+
 <!--- Verify first that your issue is not already reported on GitHub -->
 <!--- Please also check https://molecule.readthedocs.io/en/latest/faq.html --->
 <!--- Please use https://groups.google.com/forum/#!forum/molecule-users for usage questions -->

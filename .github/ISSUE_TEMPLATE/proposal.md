@@ -1,9 +1,11 @@
 ---
-name: 📝 Proposal
+name: "\U0001F4DD Proposal"
 about: Suggest an large change for the Molecule project
-labels: proposal
----
+title: ''
+labels: ''
+assignees: ''
 
+---
 
 # Proposal: <proposal name>
 

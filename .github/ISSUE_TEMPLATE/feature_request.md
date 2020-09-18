@@ -1,7 +1,10 @@
 ---
-name: ✨ Feature request
+name: "✨ Feature request"
 about: Suggest an idea for the Molecule project
+title: ''
 labels: enhancement
+assignees: ''
+
 ---
 
 # Issue Type
