@@ -1,5 +1,5 @@
 ********
-Molecule
+Molecule is the SHIT
 ********
 
 .. image:: https://badge.fury.io/py/molecule.svg
