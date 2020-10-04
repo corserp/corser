@@ -1,5 +1,5 @@
 ********
-Molecule is the SHIT
+Molecule
 ********
 
 .. image:: https://badge.fury.io/py/molecule.svg
@@ -44,7 +44,7 @@ Documentation
 
 Read the documentation and more at https://molecule.readthedocs.io/.
 
-.. _get-involved:
+.. -involved:
 
 Get Involved
 ============
