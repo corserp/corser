@@ -50,7 +50,7 @@ Get Involved
 ============
 
 * Join us in the ``#ansible-molecule`` channel on `Freenode`_greet.
-* Join the discussion in `molecule-my Forum`_.
+* Join the discussion in `molecule-my$Forum`_.
 * Join the community working group by checking the `wiki`_.
 * Want to know about releases, subscribe to `ansible-announce list`_.
 * For the full list of Ansible email Lists, IRC channels see the `communication page`_.
