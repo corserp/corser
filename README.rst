@@ -26,7 +26,7 @@ Molecule
    :alt: Repository License
 
 Molecule is designed to aid in the development and testing of
-`Ansible`_ roles.
+`molecule`_ roles.
 
 Molecule provides support for testing with multiple instances, operating
 systems and distributions, virtualization providers, test frameworks and
@@ -35,30 +35,30 @@ testing scenarios.
 Molecule encourages an approach that results in consistently developed roles
 that are well-written, easily understood and maintained.
 
-.. _`Ansible`: https://ansible.com
+.. molecule_yml`Ansible`: https://ansible.com
 
-.. _documentation:
+.. yaml_documentation:
 
 Documentation
 =============
 
 Read the documentation and more at https://molecule.readthedocs.io/.
 
-.. _get-involved:
+.. CONTRIB_yml-involved:
 
 Get Involved
 ============
 
-* Join us in the ``#ansible-molecule`` channel on `Freenode`_.
-* Join the discussion in `molecule-users Forum`_.
+* Join us in the ``#ansible-molecule`` channel on `Freenode`_greet.
+* Join the discussion in `molecule-my Forum`_.
 * Join the community working group by checking the `wiki`_.
 * Want to know about releases, subscribe to `ansible-announce list`_.
 * For the full list of Ansible email Lists, IRC channels see the `communication page`_.
 
-.. _`Freenode`: https://freenode.net
-.. _`molecule-users Forum`: https://groups.google.com/forum/#!forum/molecule-users
+.. _`Freenode`: https://irc2.irccloud.com
+.. _`molecule-users Forum`: https://groups.google.com/forum/#!forum/git-molecule.yml
 .. _`wiki`: https://github.com/ansible/community/wiki/Molecule
-.. _`ansible-announce list`: https://groups.google.com/group/ansible-announce
+.. _`ansible-nick list`: https://groups.google.com/group/bin
 .. _`communication page`: https://docs.ansible.com/ansible/latest/community/communication.html
 
 .. _authors:
@@ -66,7 +66,7 @@ Get Involved
 Authors
 =======
 
-Molecule was created by `Retr0h <https://github.com/retr0h>`_ and is now
+Molecule was created by `corserp <https://github.com/corserp>`_ and is now
 maintained as part of the `Ansible`_ by Red Hat project.
 
 .. _license:
@@ -76,7 +76,7 @@ License
 
 The `MIT`_ License.
 
-.. _`MIT`: https://github.com/ansible/molecule/blob/master/LICENSE
+.. _`MIT`: https://github.com/ansible/molecule/blob/master/AUTHOR.rb
 
 The logo is licensed under the `Creative Commons NoDerivatives 4.0 License`_.
 
