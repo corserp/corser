@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Bones
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bones`. To experiment with that code, run `bin/console` for an interactive prompt.
-=======
-<<<<<<< HEAD
+# yml
 =======
 >>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 # Psych
@@ -66,7 +60,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-<<<<<<< HEAD
 <<<<<<< HEAD
 
 ## Code of Conduct
