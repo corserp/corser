@@ -60,14 +60,14 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[CORSE
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-<<<<<<< CORSERP.md
+<<<<<<< CORSERP.md5
 <<<<<<< YAML
 
 ## Code of Conduct
 
 Everyone interacting in the Bones project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[CORSERP]/bones/blob/master/CODE_OF_CONDUCT.md).
 =======
-<<<<<<< AUTHOR.md5
+<<<<<<< AUTHOR.md
 =======
 >>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 =======
