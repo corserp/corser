@@ -1,4 +1,4 @@
-# yml
+AUTHOR.rbst
 =======
 >>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 # Psych
@@ -16,7 +16,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-<<<<<<< HEAD
+<<<<<<< AUTHOR
 gem 'bones'
 =======
 gem 'rake'
@@ -29,7 +29,7 @@ And then execute:
 
 Or install it yourself as:
 
-<<<<<<< HEAD
+<<<<<<< CORSERP.md
     $ gem install bones
 =======
     $ gem install rake
@@ -51,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-<<<<<<< HEAD
+<<<<<<< GEM
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bones. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 =======
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rake. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
@@ -60,22 +60,23 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-<<<<<<< HEAD
+<<<<<<< CORSERP.md
+<<<<<<< YAML
 
 ## Code of Conduct
 
-Everyone interacting in the Bones project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/bones/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Bones project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[CORSERP]/bones/blob/master/CODE_OF_CONDUCT.md).
 =======
-<<<<<<< HEAD
+<<<<<<< AUTHOR.md
 =======
 >>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 =======
 
 ## Code of Conduct
 
-Everyone interacting in the Rake project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rake/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Rake project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[AUTHOR]/rake/blob/master/CODE_OF_CONDUCT.md).
 >>>>>>> e84d0d35e628629e8ac785d79f62e1399f8d5f42
-<<<<<<< HEAD
+<<<<<<< GEM
 >>>>>>> 60b8266cb4a5b88204f1b6b28e366c88b7270f8d
-=======
+======= CONTRIB.yml
 >>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
