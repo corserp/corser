@@ -67,7 +67,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 Everyone interacting in the Bones project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[CORSERP]/bones/blob/master/CODE_OF_CONDUCT.md).
 =======
-<<<<<<< AUTHOR.md
+<<<<<<< AUTHOR.md5
 =======
 >>>>>>> e91355cf081d9dcd78efe38cdcc6f0353a1aa3ac
 =======
