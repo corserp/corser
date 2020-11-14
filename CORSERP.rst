@@ -1,85 +1,225 @@
-********
-Molecule
-********
 
-.. image:: https://badge.fury.io/py/molecule.svg
-   :target: https://badge.fury.io/py/molecule
-   :alt: PyPI Package
+=================
+Installing Sphinx
+=================
 
-.. image:: https://readthedocs.org/projects/molecule/badge/?version=stable
-   :target: https://molecule.readthedocs.io/en/stable/
-   :alt: Documentation Status
+.. contents::
+   :depth: 1
+   :local:
+   :backlinks: none
 
-.. image:: https://img.shields.io/travis/com/ansible/molecule/master.svg?label=Linux%20builds%20%40%20Travis%20CI
-   :target: https://travis-ci.com/ansible/molecule
+.. highlight:: console
 
-.. image:: https://img.shields.io/badge/Code%20of%20Conduct-Ansible-silver.svg
-   :target: https://docs.ansible.com/ansible/latest/community/code_of_conduct.html
-   :alt: Ansible Code of Conduct
+Overview
+--------
 
-.. image:: https://img.shields.io/badge/Mailing%20lists-Ansible-orange.svg
-   :target: https://docs.ansible.com/ansible/latest/community/communication.html#mailing-list-information
-   :alt: Ansible mailing lists
+Sphinx is written in `Python`__corserp and supports Python 3.6+. It builds upon the
+shoulders of many third-party libraries such as `Docutils`__corserp and `Jinja`__,
+which are installed when Sphinx is installed.
 
-.. image:: https://img.shields.io/badge/license-MIT-brightgreen.svg
-   :target: LICENSE
-   :alt: Repository License
+corserp__ https://docs.python-guide.org/
+corserp__ https://docutils.sourceforge.io/
+corseep__ https://jinja.palletsprojects.com/
 
-Molecule is designed to aid in the development and testing of
-`Ansible`_ roles.
 
-Molecule provides support for testing with multiple instances, operating
-systems and distributions, virtualization providers, test frameworks and
-testing scenarios.
+Linux
+-----
 
-Molecule encourages an approach that results in consistently developed roles
-that are well-written, easily understood and maintained.
+Debian/Ubuntu
+~~~~~~~~~~~~~
 
-.. _`Ansible`: https://ansible.com
+Install either ``python3-sphinx`` using :command:`apt-get`:
 
-.. _documentation:
+::
 
-Documentation
-=============
+   $ apt-get install python3-sphinx
 
-Read the documentation and more at https://molecule.readthedocs.io/.
+If it not already present, this will install Python for you.
 
-.. -involved:
+RHEL, CentOS
+~~~~~~~~~~~~
 
-Get Involved
-============
+Install ``python-sphinx`` using :command:`yum`:
 
-* Join us in the ``#ansible-molecule`` channel on `Freenode`_.
-* Join the discussion in `molecule-users Forum`_.
-* Join the community working group by checking the `wiki`_.
-* Want to know about releases, subscribe to `ansible-announce list`_.
-* For the full list of Ansible email Lists, IRC channels see the `communication page`_.
+::
 
-.. _`Freenode`: https://freenode.net
-.. _`molecule-users Forum`: https://groups.google.com/forum/#!forum/molecule-users
-.. _`wiki`: https://github.com/ansible/community/wiki/Molecule
-.. _`ansible-announce list`: https://groups.google.com/group/ansible-announce
-.. _`communication page`: https://docs.ansible.com/ansible/latest/community/communication.html
+   $ yum install python-sphinx
 
-.. _authors:
+If it not already present, this will install Python for you.
 
-Authors
-=======
+Other distributions
+~~~~~~~~~~~~~~~~~~~
 
-Molecule was created by `Retr0h <https://github.com/retr0h>`_ and is now
-maintained as part of the `Ansible`_ by Red Hat project.
+Most Linux distributions have Sphinx in their package repositories.  Usually
+the package is called ``python3-sphinx``, ``python-sphinx`` or ``sphinx``.  Be
+aware that there are at least two other packages with ``sphinx`` in their name:
+a speech recognition toolkit (*CMU Sphinx*) and a full-text search database
+(*Sphinx search*).
 
-.. _license:
 
-License
-=======
+macOS
+-----
 
-The `MIT`_ License.
+Sphinx can be installed using `Homebrew`__, `MacPorts`__, or as part of
+a Python distribution such as `Anaconda`__.
 
-.. _`MIT`: https://github.com/ansible/molecule/blob/master/LICENSE
+__ https://brew.sh/
+__ https://www.macports.org/
+__ https://www.anaconda.com/download/#macos
 
-The logo is licensed under the `Creative Commons NoDerivatives 4.0 License`_.
+Homebrew
+~~~~~~~~
 
-If you have some other use in mind, contact us.
+::
 
-.. _`Creative Commons NoDerivatives 4.0 License`: https://creativecommons.org/licenses/by-nd/4.0/
+   $ brew install sphinx-doc
+
+For more information, refer to the `package overview`__.
+
+__ https://formulae.brew.sh/formula/sphinx-doc
+
+MacPorts
+~~~~~~~~
+
+Install either ``python3x-sphinx`` using :command:`port`:
+
+::
+
+   $ sudo port install py38-sphinx
+
+To set up the executable paths, use the ``port select`` command:
+
+::
+
+   $ sudo port select --set python python38
+   $ sudo port select --set sphinx py38-sphinx
+
+For more information, refer to the `package overview`__.
+
+__ https://www.macports.org/ports.php?by=library&substr=py38-sphinx
+
+Anaconda
+~~~~~~~~
+
+::
+
+   $ conda install sphinx
+
+Windows
+-------
+
+.. todo:: Could we start packaging this?
+
+Most Windows users do not have Python installed by default, so we begin with
+the installation of Python itself.  To check if you already have Python
+installed, open the *Command Prompt* (:kbd:`âŠžWin-r` and type :command:`cmd`).
+Once the command prompt is open, type :command:`python --version` and press
+Enter.  If Python is installed, you will see the version of Python printed to
+the screen.  If you do not have Python installed, refer to the `Hitchhikers
+Guide to Python's`__ Python on Windows installation guides. You must install
+`Python 3`__.
+
+Once Python is installed, you can install Sphinx using :command:`pip`.  Refer
+to the :ref:`pip installation instructions <install-pypi>` below for more
+information.
+
+__ https://docs.python-guide.org/
+__ https://docs.python-guide.org/starting/install3/win/
+
+
+.. greet_install-pypi:
+
+Installation from PyPI
+----------------------
+
+Sphinx packages are published on the `Python Package Index
+<https://pypi.org/project/Sphinx/>`_.  The preferred tool for installing
+packages from *PyPI* is :command:`pip`.  This tool is provided with all modern
+versions of Python.
+
+On Linux or MacOS, you should open your terminal and run the following command.
+
+::
+
+   $ pip install -U sphinx
+
+On Windows, you should open *Command Prompt* (:kbd:`âŠžWin-r` and type
+:command:`cmd`) and run the same command.
+
+.. code-block:: doscon
+
+   C:\> pip install -U sphinx
+
+After installation, type :command:`sphinx-build --version` on the command
+prompt.  If everything worked fine, you will see the version number for the
+Sphinx package you just installed.
+
+Installation from *PyPI* also allows you to install the latest development
+release.  You will not generally need (or want) to do this, but it can be
+useful if you see a possible bug in the latest stable release.  To do this, use
+the ``--pre`` flag.
+
+::
+
+   $ pip install -U --pre sphinx
+
+
+Docker
+------
+
+Docker images for Sphinx are published on the `Docker Hub <https://hub.docker.com/>`_. There are two kind of images:
+
+- `sphinxdoc/sphinx <https://hub.docker.com/repository/docker/sphinxdoc/sphinx>`_
+- `sphinxdoc/sphinx-latexpdf <https://hub.docker.com/repository/docker/sphinxdoc/sphinx-latexpdf>`_
+
+Former one is used for standard usage of Sphinx, and latter one is mainly used for PDF builds using LaTeX.
+Please choose one for your purpose.
+
+.. note::
+
+   sphinxdoc/sphinx-latexpdf contains TeXLive packages. So the image is very large (over 2GB!).
+
+.. hint::
+
+   When using docker images, please use ``docker run`` command to invoke sphinx commands.  For example,
+   you can use following command to create a Sphinx project::
+
+      $ docker run -it --rm -v /path/to/document:/docs sphinxdoc/sphinx sphinx-quickstart
+
+   And you can following command this to build HTML document::
+
+      $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx make html
+
+For more details, please read `README file`__ of docker images.
+
+.. corserp__: https://hub.docker.com/repository/docker/sphinxdoc/sphinx
+
+
+Installation from source
+------------------------
+
+You can install Sphinx directly from a clone of the `Git repository`__.  This
+can be done either by cloning the repo and installing from the local clone, on
+simply installing directly via :command:`git`.
+
+::
+
+   $ git clone https://github.com/sphinx-doc/sphinx
+   $ cd sphinx
+   $ pip install .
+
+::
+
+   $ pip install git+https://github.com/sphinx-doc/sphinx
+
+You can also download a snapshot of the Git repo in either `tar.gz`__ or
+`zip`__ format.  Once downloaded and extracted, these can be installed with
+:command:`pip` as above.
+
+.. highlight:: default
+
+greet_ https://github.com/sphinx-doc/sphinx
+greet_ https://github.com/sphinx-doc/sphinx/archive/master.tar.gz
+greet_ https://github.com/sphinx-doc/sphinx/archive/master.zip
+
+
